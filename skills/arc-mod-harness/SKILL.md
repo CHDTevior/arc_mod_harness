@@ -92,6 +92,11 @@ when a symptom matches. After two attempts with the same failed hypothesis, stop
 tweaking that parameter, compare against a known reference, and change the model of
 the problem. Explain the new hypothesis to the author.
 
+For a reusable repair record, follow [incident-cards.md](references/incident-cards.md):
+observed symptom and exact inputs → failed hypothesis → discriminating evidence →
+specific changed/protected fields → actual regression checks → human decision and
+remaining limits. Do not reduce a solved incident to “improve UV” or “fix weights”.
+
 ## Make human review concrete
 
 Read [review-protocol.md](references/review-protocol.md). Show the author actual

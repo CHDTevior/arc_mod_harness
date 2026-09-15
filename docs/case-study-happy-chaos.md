@@ -12,6 +12,9 @@
 新增 [特蕾西娅 → Dizzy 示例](../skills/arc-mod-harness/references/theresa-dizzy-example.md) 是
 今后立项的改进路线，未声称已经制作了这个角色 MOD。
 
+要照着处理相似故障，可直接读 [具体故障案例](../skills/arc-mod-harness/references/incident-cards.md)：
+每例从问题现场、失败假设写到修改范围、复查步骤和仍存在的限制，不只列最终结论。
+
 ## 1. 怎么立项：愿望先于清单
 
 目标最初不是“换一个 FBX”，而是把 Happy Chaos 做成作者提供插画里的可爱成年女性化

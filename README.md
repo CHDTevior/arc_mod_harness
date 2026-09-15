@@ -35,6 +35,7 @@ Codex 用户可以将整个 `skills/arc-mod-harness` 文件夹放进自己的 sk
 - [Chaos 子任务例注](skills/arc-mod-harness/references/chaos-subtasks.md)：14 类实际工作、失败和交接边界。
 - [纹理 / UV / 材质专题](skills/arc-mod-harness/references/texture-uv-material.md)：AA 丢失、有效像素、mip 驻留、共享图域、颜色与 alpha。
 - [故障排查手册](skills/arc-mod-harness/references/failure-playbook.md)：身体接缝、眉毛扭曲、瞳孔遮挡、黑枪、权重量化等。
+- [具体故障案例](skills/arc-mod-harness/references/incident-cards.md)：六组定位/返工过程、具体修复字段、复查步骤与适用边界。
 - [完整项目复盘](docs/case-study-happy-chaos.md)：从立项、失败路线到最终修复，以及人类在何时介入。
 - [命令行工具](docs/cli.md)：问答记录、哈希追踪、审查页、反馈、版本选择、依赖清单、只读清理计划。
 - [合成演练](docs/walkthrough.md)：不需要游戏资产也能跑完整套审查与防错流程。
