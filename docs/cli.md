@@ -31,6 +31,10 @@ python skills/arc-mod-harness/scripts/project_points.py --help
 参数/结构/路径/缺资源等异常为 2。`release-plan` 可正常产生仍待审查的计划，需阅读其中
 readiness；其 status 始终写明是声明依赖图计划。
 
+init 同时提供 `base-assessment.md`、`component-plan.md`、`subtask-handoff.md` 和
+`surface-audit.md`。这些是可填写模板，不是自动判断兼容性的模块；填好后按普通版本化
+technical_report 登记。新增访谈问题按 scope 分流，语音项目不会被问身体或图像生成。
+
 ## Artifact
 
 每个 ID 只登记一次。文件修改后用新的 ID/路径，不刷新旧哈希假装原审查继续有效。

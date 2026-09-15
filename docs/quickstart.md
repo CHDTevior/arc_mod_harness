@@ -48,7 +48,8 @@ python skills/arc-mod-harness/scripts/harness.py brief projects/my-mod --id brie
 
 先看这份 brief，继续填最相关的参考问题。`next` 只是问题队列，AI 应根据你实际说的话
 调整提问；不会替你回答。项目内 `adapter.json` 是本地工具调查表，`replacement-matrix.md`
-用来枚举真正需要替换的资源，`NEXT.md` 记录恢复点。
+用来枚举真正需要替换的资源，`NEXT.md` 记录恢复点。另附底模评估、部件计划、子任务交接和表面审计四张工作表；
+仅填写当前相关的表。空模板不算审查通过，已有项目可从 templates 按需复制到新文件。
 
 注册文件前把它保存在项目目录内，例如 `references/body-front.png`；登记使用正斜杠的
 相对路径，避免迁移电脑后满篇绝对路径。源原件另行保留，不因登记而覆盖。

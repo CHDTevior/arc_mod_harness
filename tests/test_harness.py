@@ -48,6 +48,32 @@ class HarnessTests(unittest.TestCase):
         report = h.inspect(self.root, self.s, "share")
         self.assertTrue(report["errors"]); self.assertEqual(report["stages"]["runtime"], "pending")
 
+    def test_voice_interview_skips_visual_planning(self):
+        self.s["answers"]["scopes"]["value"] = ["voice"]
+        ids = {q["id"] for q in h.eligible_questions(self.s)}
+        self.assertTrue(ids.isdisjoint({"in_game_target", "body_fit", "component_plan", "surface_targets"}))
+        self.assertIn("voice_plan", ids)
+
+    def test_outfit_interview_establishes_target_before_base(self):
+        self.s["answers"]["scopes"]["value"] = ["outfit"]
+        ids = [q["id"] for q in h.eligible_questions(self.s)]
+        self.assertLess(ids.index("in_game_target"), ids.index("base_source"))
+        self.assertLess(ids.index("base_source"), ids.index("body_fit"))
+        self.assertIn("component_plan", ids)
+        self.assertIn("surface_targets", ids)
+
+    def test_material_interview_does_not_force_body_or_generation(self):
+        self.s["answers"]["scopes"]["value"] = ["material"]
+        ids = {q["id"] for q in h.eligible_questions(self.s)}
+        self.assertIn("surface_targets", ids)
+        self.assertTrue(ids.isdisjoint({"in_game_target", "base_source", "body_fit", "component_plan"}))
+
+    def test_init_planning_templates_are_available_without_acceptance(self):
+        for name in ("base-assessment.md", "component-plan.md", "subtask-handoff.md", "surface-audit.md"):
+            self.assertTrue((self.root / name).read_text(encoding="utf-8").strip())
+        self.assertEqual(h.load(self.root)["decisions"], [])
+        self.assertEqual(h.load(self.root)["artifacts"], {})
+
     def test_changed_file_invalidates_decision(self):
         d = self.motion_decision()
         self.assertTrue(h.decision_current(self.root, self.s, d))

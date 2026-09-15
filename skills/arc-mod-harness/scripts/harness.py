@@ -404,7 +404,8 @@ def run(args):
         for d in ("references", "source", "candidates", "evidence", "reviews", "release", "temporary"): (root / d).mkdir()
         s = {"schema_version": 1, "name": args.name, "created_at": now(), "selected_variant": "main", "answers": {}, "artifacts": {}, "decisions": [], "feedback": [], "selections": []}
         save(root, s)
-        for filename in ("adapter.json", "replacement-matrix.md", "NEXT.md"):
+        for filename in ("adapter.json", "replacement-matrix.md", "NEXT.md",
+                         "base-assessment.md", "component-plan.md", "subtask-handoff.md", "surface-audit.md"):
             shutil.copyfile(SKILL / "templates" / filename, root / filename)
         return {"project": str(root), "next": "Read references/interview.md; ask one consequential question."}
     s = load(root)

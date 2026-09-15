@@ -4,6 +4,12 @@ Python 3.10+，标准库即可。在技能目录中运行 `python scripts/harnes
 项目是新目录；init 不覆盖现有目录。目录中的 `project.json` 是当前记录，`NEXT.md` 是
 人和 AI 恢复上下文的简短入口。命令必须串行运行，同一个文件不要由多个进程同时写。
 
+init 还复制四张可填写工作表：`base-assessment.md`、`component-plan.md`、
+`subtask-handoff.md`、`surface-audit.md`。它们不自动登记为完成证据，不会强制语音项目
+做身体。已有项目可从技能 templates 复制所需表到新文件，不覆盖当前记录。
+填好后以新版本登记 `technical_report`，用 built_from 关联实际候选与检查文件；CLI
+校验哈希/来源，不会解析文字内容自动决定体型或纹理是否合格。
+
 ## 常用流程
 
 ```sh

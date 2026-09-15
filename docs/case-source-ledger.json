@@ -1,6 +1,6 @@
 {
   "recorded_date": "2026-09-15",
-  "scope": "Selected local production records inspected for the retrospective. Files remain private; digests identify the evidence, not a public independent verification. Conversation feedback is paraphrased separately. No full transcript or game assets are included.",
+  "scope": "Selected local production records inspected for the retrospective. Files remain private; digests identify the evidence, not a public independent verification. Conversation feedback is paraphrased separately. No full transcript or game assets are included. Additional records cover subtask handoffs and texture/UV/material diagnosis. source_collection defaults to HappyChaos_Mod; the voice handoff is relative to Frau-VC.",
   "records": [
     {
       "id": "H01",
@@ -200,6 +200,168 @@
       "project_relative_source": "work/tripo_cli/CANDIDATE_EVALUATION.md",
       "sha256": "4a5c17cf6af31c17c3fd0e09958842f8a4960afc58ade92914270941f0008ab1",
       "bytes": 4357,
+      "public_source_included": false
+    },
+    {
+      "id": "H26",
+      "title": "Early garment topology and lining repair",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v02/clothes/README.md",
+      "sha256": "a93bfc210eca746ea10f974456ca0cdf2df65ecd254cec546e845ae3568c127b",
+      "bytes": 5588,
+      "public_source_included": false
+    },
+    {
+      "id": "H27",
+      "title": "Imagegen Source11 turnaround and measured limits",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "concept/Tripo_Ideal_TPose_Source11_README.md",
+      "sha256": "0e91fe04ee1d86ed7e664fa4c89c67a85403a3bedd9429aa1fa11674205a5ba8",
+      "bytes": 2250,
+      "public_source_included": false
+    },
+    {
+      "id": "H28",
+      "title": "Actual Tripo coat structure inspection",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/jacket_lining_overlap_r05/tripo_structure_reference/README.md",
+      "sha256": "1174407c5fbaeb096d0dea3d046f4470e7e95ad746cfd5d65a2384e54d90b34d",
+      "bytes": 4162,
+      "public_source_included": false
+    },
+    {
+      "id": "H29",
+      "title": "Tripo upper coat graft paused without acceptance",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/jacket_lining_overlap_r05/tripo_actual_upper_graft/REST_REVIEW_PAUSED.md",
+      "sha256": "d3d3094812bf7b1bde6d2f56ac96867b5f863784396de42565b1a2443a4e6a6b",
+      "bytes": 3912,
+      "public_source_included": false
+    },
+    {
+      "id": "H30",
+      "title": "Late victory hand contact adaptation",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/shoulder_pose_diagnostic/visual_chain_r05_win_late_contact/LATE_CONTACT_HANDOFF.md",
+      "sha256": "f2e2b07e9d6c52eda47b47056ac27e8b3926830ff95f34a0a50309c74cd20e32",
+      "bytes": 8815,
+      "public_source_included": false
+    },
+    {
+      "id": "H31",
+      "title": "Shoulder and axilla weight adaptation",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/shoulder_pose_diagnostic/visual_chain_r04_ref075_axilla/AUX04_HANDOFF.md",
+      "sha256": "996f46b63fd9bf85737a8c9bed36d067e3ab40ce269ce2843ef315ab30b11d74",
+      "bytes": 5792,
+      "public_source_included": false
+    },
+    {
+      "id": "H32",
+      "title": "Native default motion batch coverage",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/native_ref075_default110/DEFAULT110_HANDOFF.md",
+      "sha256": "c02c29e45445ec0808ecbdc1cca9e59f4e923f91fa2afec79b6db7b016ae8394",
+      "bytes": 3471,
+      "public_source_included": false
+    },
+    {
+      "id": "H33",
+      "title": "Remaining native motions and bounded reduction difference",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/native_ref075_remaining5/REMAINING5_HANDOFF.md",
+      "sha256": "fcaf8fa7bf51c789105d55a81e56867e16787d3ed43650bd6dbbcdfc5c493cc5",
+      "bytes": 3583,
+      "public_source_included": false
+    },
+    {
+      "id": "H34",
+      "title": "Initial native motion batch coverage",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/native_ref075_batch18/BATCH18_HANDOFF.md",
+      "sha256": "576d198206b5aec01023ac3ded1b9cd3dc86a5b3c48d22e9c71f316b02977289",
+      "bytes": 9440,
+      "public_source_included": false
+    },
+    {
+      "id": "H35",
+      "title": "Voice source handoff and full-path mapping",
+      "source_collection": "Frau-VC",
+      "project_relative_source": "exports/HappyChaos_Frau_epoch200/MOD整合说明_默认+12.md",
+      "sha256": "cef889fbb9ce9ad471efef1d56d8fae86d41e21d560479400b492b60c1dac36e",
+      "bytes": 4115,
+      "public_source_included": false
+    },
+    {
+      "id": "H36",
+      "title": "Actual multiview Tripo generation and segmentation stop",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/tripo_cli/artifacts/p2_multiview_v01/RUN_RECORD.md",
+      "sha256": "0f5e1ceb7e37cfc3d514a0dd9a1ff35c0ded90b52c3395ee455656e59fd52275",
+      "bytes": 2087,
+      "public_source_included": false
+    },
+    {
+      "id": "H37",
+      "title": "Texture clarity and continuous palette sampling",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/texture_clarity_audit/README.md",
+      "sha256": "31ad3f3894d0aa7786faa3d202269b4cb23f5350ae669fb35a737c06dfbe54b8",
+      "bytes": 1290,
+      "public_source_included": false
+    },
+    {
+      "id": "H38",
+      "title": "UV and native mip-residency cause isolation",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/atlas_uv_investigation/READ_ONLY_FINDINGS.md",
+      "sha256": "c1c7017670d4f6d43c0a8935be4e939ddaf3415297bcad1992673da663ba7055",
+      "bytes": 5619,
+      "public_source_included": false
+    },
+    {
+      "id": "H39",
+      "title": "Body UV R06 review and rejected out-of-domain R05",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_uv_r06/ROOT_REVIEW.md",
+      "sha256": "209de85d7262d6a6fbc6a24c9076284656a452e4b3a35802ab43a7c1f5f02ef6",
+      "bytes": 2922,
+      "public_source_included": false
+    },
+    {
+      "id": "H40",
+      "title": "Runtime material routing and shared atlas contract",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/pipeline_layout_contract/README.md",
+      "sha256": "954b2cc99388380d7c5e757c4b4d7995a7dc1fa1ed0a19aaad2e243a2f1cab0c",
+      "bytes": 11541,
+      "public_source_included": false
+    },
+    {
+      "id": "H41",
+      "title": "Target-only material boundary sampling",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/atlas_layout_r04/README.md",
+      "sha256": "1d9ec3f98cfe1c959c120a5c1e5b6d5aa996b737ec47a1ec4731859a15592690",
+      "bytes": 3244,
+      "public_source_included": false
+    },
+    {
+      "id": "H42",
+      "title": "Hand source-field antialiasing and control-alpha separation",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/hand_aa_r01/README.md",
+      "sha256": "06efafc24711ee080d1a7847c4c5786d965ca0ff194a14a369bfc2b9f9720da9",
+      "bytes": 2626,
+      "public_source_included": false
+    },
+    {
+      "id": "H43",
+      "title": "Shared 4K source-base review checkpoint",
+      "source_collection": "HappyChaos_Mod",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/shared_base_r03/ROOT_REVIEW.md",
+      "sha256": "f102634fbe9d570d647c88e1ad3cbaebad66d20d2a71a148dbaf1d49bc40ff92",
+      "bytes": 1583,
       "public_source_included": false
     }
   ]

@@ -10,7 +10,7 @@
 
 把下面这段发给你的 AI，并让它读取本仓库的 [SKILL.md](skills/arc-mod-harness/SKILL.md)：
 
-> 用 arc-mod-harness 带我做一个 MOD。先像 grill-me 一样问清楚我的想法，一轮只问一到三个最关键的问题。先用我已有的图片、模型和游戏文件判断能做什么；缺参考时，帮我生成或编辑三视图。给我可以比较的目标和实际结果，别让我从一堆技术参数里猜。
+> 用 arc-mod-harness 带我做一个 MOD。先像 grill-me 一样问清楚我的想法，一轮只问一到三个最关键的问题。先用我已有的图片、模型和游戏文件判断能做什么。全角色替换时，先用实际游戏截图结合人设三视图生成目标观感，缺三视图时帮我补全，再比较底模与绑定。给我可以比较的目标和实际结果，别让我从一堆技术参数里猜。
 
 Codex 用户可以将整个 `skills/arc-mod-harness` 文件夹放进自己的 skills 目录，再调用 `$arc-mod-harness`。示例安装命令和跨工具用法见 [使用指南](docs/quickstart.md)。技能中的资料和脚本随文件夹一起复制，不依赖本项目的私有工作目录。
 
@@ -18,7 +18,7 @@ Codex 用户可以将整个 `skills/arc-mod-harness` 文件夹放进自己的 sk
 
 | 你的想法 | 建议起点 | 人类最该看的东西 |
 |---|---|---|
-| 人物、身体、衣服一起改 | 2D 人设 → 连续身体 rest pose → 衣服 → 原骨架适配 | 真模型三视图、持武器、抬臂和游戏特写 |
+| 人物、身体、衣服一起改 | 游戏镜头概念 + 三视图 → 底模/绑定比较 → 衣服分件 → 原动作检查 | 真模型三视图、持武器、抬臂和游戏特写 |
 | 已有 MOD，只修表情或材质 | 冻结现版 → 定位镜头 → 单问题候选 | 同相机 A/B、控制点投影、过渡帧 |
 | 只改配色、语音等 | 跳过不相关建模阶段 | 全配色对应关系、语音触发和最终包 |
 
@@ -29,6 +29,11 @@ Codex 用户可以将整个 `skills/arc-mod-harness` 文件夹放进自己的 sk
 - [技能入口](skills/arc-mod-harness/SKILL.md)：AI 的工作方式、提问、交付和恢复上下文规则。
 - [问答设计](skills/arc-mod-harness/references/interview.md)：把“可爱”“不呆”“更有光泽”问成可执行目标。
 - [2D 参考与投影](skills/arc-mod-harness/references/visual-targets.md)：image gen/edit 提示模板、三视图检查、眼眉嘴投影方法。
+- [底模与绑定选择](skills/arc-mod-harness/references/base-selection.md)：体型相近时优先调查同角色 nude 底模；区分权重迁移和必要的动作适配。
+- [分件与 Tripo 参考](skills/arc-mod-harness/references/component-workflow.md)：头发、衣服和饰件各自的 2D/3D 循环与绑定。
+- [特蕾西娅 → Dizzy 假设立项](skills/arc-mod-harness/references/theresa-dizzy-example.md)：先预演游戏效果，再选择生产路线。
+- [Chaos 子任务例注](skills/arc-mod-harness/references/chaos-subtasks.md)：14 类实际工作、失败和交接边界。
+- [纹理 / UV / 材质专题](skills/arc-mod-harness/references/texture-uv-material.md)：AA 丢失、有效像素、mip 驻留、共享图域、颜色与 alpha。
 - [故障排查手册](skills/arc-mod-harness/references/failure-playbook.md)：身体接缝、眉毛扭曲、瞳孔遮挡、黑枪、权重量化等。
 - [完整项目复盘](docs/case-study-happy-chaos.md)：从立项、失败路线到最终修复，以及人类在何时介入。
 - [命令行工具](docs/cli.md)：问答记录、哈希追踪、审查页、反馈、版本选择、依赖清单、只读清理计划。
@@ -37,10 +42,11 @@ Codex 用户可以将整个 `skills/arc-mod-harness` 文件夹放进自己的 sk
 
 ```mermaid
 flowchart LR
-  A[想法与关键镜头] --> B[2D 参考 / gen + edit]
-  B --> C[连续身体 rest pose]
-  C --> D[衣服和配件]
-  D --> E[骨架与动作适配]
+  A[想法与关键镜头] --> B[游戏截图 edit + 人设三视图]
+  B --> C[体型与绑定候选比较]
+  C --> K[复用或适配连续底模]
+  K --> D[衣发饰件 / 可选 Tripo 参考]
+  D --> E[原动作检查 / 必要的适配]
   E --> F[原相机 / 关键帧 / 投影]
   F --> G{人类比较}
   G -->|修改目标| B
@@ -63,7 +69,7 @@ python skills/arc-mod-harness/scripts/harness.py next projects/my-mod
 python skills/arc-mod-harness/scripts/harness.py check projects/my-mod
 ```
 
-本次执行范围见 [v0.1 验证记录](docs/validation.md)。代码与本文档采用 [MIT License](LICENSE)；
+本次执行范围见 [验证记录](docs/validation.md)。代码与本文档采用 [MIT License](LICENSE)；
 许可证不包含案例涉及的原游戏、第三方模型或语音资产。
 
 复盘中的最终 R09.3 已有打包、安装哈希和原生 UE 预览证据，**没有该版新一轮实机或朋友机器验收记录**。旧版的实机反馈不能替代新版测试。公开仓库不附带游戏模型、原贴图、转换语音或私人对话。

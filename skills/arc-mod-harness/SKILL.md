@@ -1,6 +1,6 @@
 ---
 name: arc-mod-harness
-description: Guide a novice through a multifaceted game mod with a grill-me interview, image generation/editing references and turnarounds, rest-pose body and clothing, rig and animation adaptation, 2D projected facial targets, human review, material/palette/voice integration, and evidence-based packaging. Use to start a mod, recover a drifting mod project, or turn visual feedback into a controlled revision. Routes texture-only and voice-only tasks around unrelated modeling steps.
+description: Guide a novice through a multifaceted game mod with a grill-me interview, in-game image edits and turnarounds, body/rig compatibility and nude-base reuse, component modeling/Tripo references, animation adaptation, 2D facial projection, human review, materials/palettes/voice, and evidence-based packaging. Use to start a mod, recover a drifting mod project, or turn visual feedback into a controlled revision. Routes texture-only and voice-only tasks around unrelated modeling steps.
 ---
 
 # ARC Mod Harness
@@ -35,7 +35,11 @@ contradiction. Use `answer` to save actual answers. Keep proposals labeled as su
 Read [visual-targets.md](references/visual-targets.md). Use the host's image
 generation/editing capability when the design needs a new visual reference. Inspect
 the supplied image first. Generate consistent front/side/back views and edit the
-accepted reference for local corrections. If the capability is unavailable, retain
+accepted reference for local corrections. For a full character swap, first edit an
+actual target-game frame using the chosen character turnarounds as design references.
+Preserve the camera, pose, contacts, lighting and game style. Review this intended
+in-game appearance before investing in body adaptation and detailed modeling; label
+it as concept, never as an implemented game result. If the capability is unavailable, retain
 the prompt and use supplied references; do not call a sketch a generated result.
 
 Ask what to borrow from each 3D reference: continuous anatomy, garment structure,
@@ -46,10 +50,35 @@ concepts are never evidence that the 3D model, animation or installation works.
 ## Advance through relevant stages
 
 Read [workflow.md](references/workflow.md) and [adapters.md](references/adapters.md).
-For a full character: reference → continuous unposed anatomical base → clothes and
-accessories → source rig and motion adaptation → material/palettes → critical
+For a full character: in-game concept + turnarounds → body/rig candidate assessment →
+continuous unposed anatomical base → clothes and accessories → source rig and motion
+checks/adaptation → material/palettes → critical
 animation frames → final runtime package. Voice joins the relevant trigger tests.
 Texture-only and voice-only changes skip irrelevant geometry stages.
+
+Read [base-selection.md](references/base-selection.md) for body/outfit changes.
+Investigate an existing same-target-character nude/base mod with a close body shape
+and usable binding first. Compare visual proportions separately from actual rig/rest,
+weights and native motion compatibility. Reuse verified rig/animation when it fits;
+retarget only when proportion or contact evidence requires it. Never claim a suitable
+donor exists before inspecting it. Populate the project's `base-assessment.md`.
+
+Read [component-workflow.md](references/component-workflow.md) before splitting hair,
+clothes and accessories. Use per-component 2D → optional Tripo → real 3D inspection →
+image edit/reference → modeling/retopology loops where useful. Separate rigid binding,
+skinning and secondary-motion support. A generated rig is not target-game compatibility.
+Record `component-plan.md` and `subtask-handoff.md`; reference models stay out of runtime.
+
+For texture clarity, UV, shading or palette work read
+[texture-uv-material.md](references/texture-uv-material.md). Trace source detail,
+resampling, UV coverage, actual material/UV routes, color/alpha semantics and native
+mip residency separately. Use `surface-audit.md`; do not equate an 8K file with useful
+in-game texel density or prescribe UV changes for an unverified streaming problem.
+
+Use [theresa-dizzy-example.md](references/theresa-dizzy-example.md) for a hypothetical
+starter conversation and [chaos-subtasks.md](references/chaos-subtasks.md) for actual
+worked examples, including failed and paused branches. Do not turn a hypothetical
+planning question into a generation job or a new game project without user intent.
 
 Prove a tiny export/import/Cook round trip early, while developing the visual
 target. Keep the known-working baseline, authored source, native import and cooked
