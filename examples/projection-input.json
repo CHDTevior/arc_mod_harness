@@ -1,0 +1,19 @@
+{
+  "camera": "synthetic-orthographic-demo-NOT-GAME",
+  "frame": 0,
+  "viewport": [960, 540],
+  "matrix_convention": "row_major_times_column_vector",
+  "ndc_depth": "minus_one_to_one",
+  "world_to_clip": [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],
+  "points": [
+    {"id":"R.lower.outer","group":"character_R.eye_rim_lower","world":[-0.75,-0.20,0],"visible":true,"target_pixel":[120,345]},
+    {"id":"R.lower.middle","group":"character_R.eye_rim_lower","world":[-0.45,-0.10,0],"visible":true,"target_pixel":[264,345]},
+    {"id":"R.lower.inner","group":"character_R.eye_rim_lower","world":[-0.15,-0.20,0],"visible":true,"target_pixel":[408,345]},
+    {"id":"R.pupil","group":"character_R.black_pupil","world":[-0.45,0.1,0],"visible":true},
+    {"id":"L.lower.inner","group":"character_L.eye_rim_lower","world":[0.15,-0.20,0],"visible":true,"target_pixel":[552,345]},
+    {"id":"L.lower.middle","group":"character_L.eye_rim_lower","world":[0.45,-0.10,0],"visible":true,"target_pixel":[696,345]},
+    {"id":"L.lower.outer","group":"character_L.eye_rim_lower","world":[0.75,-0.20,0],"visible":true,"target_pixel":[840,345]},
+    {"id":"L.pupil","group":"character_L.black_pupil","world":[0.45,0.1,0],"visible":true}
+  ],
+  "edges": [["R.lower.outer","R.lower.middle"],["R.lower.middle","R.lower.inner"],["L.lower.inner","L.lower.middle"],["L.lower.middle","L.lower.outer"]]
+}

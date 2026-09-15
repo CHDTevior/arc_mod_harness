@@ -1,0 +1,15 @@
+{
+  "game": "unknown",
+  "game_build": "unknown",
+  "engine_build": "unknown",
+  "character_slots": [],
+  "tools": {},
+  "baseline_manifest": "unknown",
+  "coordinate_contract": {"units": "unknown", "axes": "unknown", "matrix_convention": "unknown"},
+  "skeleton_contract": {"names_parents_rest_hash": "unknown", "influence_limit": "unknown", "quantization": "unknown"},
+  "motion_contract": {"time_mapping": "unknown", "layering": "unknown", "visibility_switches": "unknown"},
+  "material_contract": {"slot_map": "unknown", "texture_channels": "unknown", "uv_sets": "unknown", "color_space": "unknown"},
+  "package_contract": {"format": "unknown", "mount_root": "unknown", "dependency_reader": "unknown", "manager": "unknown"},
+  "verified_commands": [],
+  "untested": ["roundtrip", "runtime", "friend_machine"]
+}

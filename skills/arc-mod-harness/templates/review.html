@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} · 审查</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101820;color:#edf1f4;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1500px;margin:auto;padding:24px}h1{font-size:28px;margin:0}p{color:#bdcbd5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px}article{background:#1a2732;border:1px solid #3b4b58;border-radius:12px;padding:18px}h2{font-size:20px;margin:0}.tag{font-size:13px;color:#8ad4dc}img,video{display:block;width:100%;height:auto;background:#0d131a}audio{width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere}code{font-size:11px;overflow-wrap:anywhere}button,input,textarea{font:inherit}button{background:#b7e8d6;border:0;border-radius:6px;color:#132924;padding:9px 14px;cursor:pointer}input,textarea{width:100%;background:#1a2732;color:#fff;border:1px solid #667986;border-radius:6px;padding:8px}label{display:block;margin:14px 0 4px}#feedback{max-width:820px}a{color:#8cdbe1}.hint{font-size:14px}fieldset{border:1px solid #4f6675;border-radius:8px}.annotatable{cursor:crosshair}
+</style></head><body>
+<header><h1>{{TITLE}} · 候选审查</h1><p>先看整体感觉，再看局部和过渡。每张图的来源类型、镜头与哈希在下方展开。</p>
+<button id="sync">从相同播放时间对齐所有视频</button><p class="hint">只对齐编码视频时间；不同片段或帧映射不等价。判断具体问题优先用原始帧号的静帧。</p></header>
+<main><div class="grid">{{CARDS}}</div>
+<section id="feedback"><h2>留下具体修改目标</h2><p>点击 PNG/JPEG 等静帧可记录图中位置；SVG 投影请按点 ID 描述。坐标原点是图片左上角。</p>
+<label for="artifact">候选 ID</label><input id="artifact">
+<label for="point">归一化 x, y</label><input id="point" placeholder="例如 0.53, 0.68">
+<label for="frame">原始帧号 / 镜头</label><input id="frame" placeholder="例如 frame 592 / Win source camera">
+<label for="part">部位（注明角色左右或屏幕左右）</label><input id="part">
+<label for="desired">想改成什么</label><textarea id="desired" rows="3"></textarea>
+<label for="preserve">哪些保持不变</label><textarea id="preserve" rows="2"></textarea>
+<button id="export">保存反馈 JSON</button><p id="status" role="status"></p>
+</section></main><footer><p>此页面不联网、不执行模型修改，也不会自动记录“通过”。把反馈文件交给 AI，让它定位后修改。</p></footer>
+<script>
+const field=id=>document.getElementById(id);
+document.querySelectorAll('img.annotatable').forEach(img=>img.addEventListener('click',e=>{
+ const r=img.getBoundingClientRect();field('artifact').value=img.dataset.id;
+ field('point').value=[(e.clientX-r.left)/r.width,(e.clientY-r.top)/r.height].map(v=>v.toFixed(4)).join(', ');
+ field('status').textContent='已记录位置，请补充想要的变化与保留项。';
+}));
+field('sync').onclick=()=>{const vs=[...document.querySelectorAll('video')];if(vs.length){for(const v of vs.slice(1))v.currentTime=vs[0].currentTime;}};
+field('export').onclick=()=>{
+ const point=field('point').value.trim();const xy=point?point.split(',').map(Number):null;
+ if(!field('artifact').value.trim()||!field('desired').value.trim()||!field('part').value.trim()){field('status').textContent='请填写候选、部位和修改目标。';return;}
+ if(xy&&(xy.length!==2||xy.some(v=>!Number.isFinite(v)||v<0||v>1))){field('status').textContent='坐标必须是 0 到 1 的 x, y。';return;}
+ const data={artifact:field('artifact').value.trim(),screen_point:xy,frame_camera:field('frame').value,part:field('part').value,desired:field('desired').value,preserve:field('preserve').value,status:'human_feedback_draft'};
+ const u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='mod-feedback.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);field('status').textContent='已导出反馈；由作者/AI读取后登记到项目。';
+};
+</script></body></html>

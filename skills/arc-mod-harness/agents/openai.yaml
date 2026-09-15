@@ -1,0 +1,6 @@
+interface:
+  display_name: "ARC Mod Harness"
+  short_description: "Guide mod ideas through visual references, review and delivery"
+  default_prompt: "Use $arc-mod-harness to question my mod idea, prepare visual targets, and guide me through making and reviewing it."
+policy:
+  allow_implicit_invocation: true

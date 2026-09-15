@@ -1,0 +1,206 @@
+{
+  "recorded_date": "2026-09-15",
+  "scope": "Selected local production records inspected for the retrospective. Files remain private; digests identify the evidence, not a public independent verification. Conversation feedback is paraphrased separately. No full transcript or game assets are included.",
+  "records": [
+    {
+      "id": "H01",
+      "title": "Concept versions and project intent",
+      "project_relative_source": "concept/README.md",
+      "sha256": "c14fc87e4e78f31c4777959cc3c2bd8e4b0d765a8b2a0ca992d0c8531e335e86",
+      "bytes": 2420,
+      "public_source_included": false
+    },
+    {
+      "id": "H02",
+      "title": "Reference model inventory",
+      "project_relative_source": "reference/README.md",
+      "sha256": "0b488f07a7891fbc2934d25266e1ffc9c444e72e64a6d948c64a4b960a8a1f4c",
+      "bytes": 4064,
+      "public_source_included": false
+    },
+    {
+      "id": "H03",
+      "title": "Author acceptance targets",
+      "project_relative_source": "work/ACCEPTANCE.md",
+      "sha256": "7e46a97e5db8a549cc17b99ff0a036568ddac2ca087a16e362c9116220dc53b1",
+      "bytes": 2402,
+      "public_source_included": false
+    },
+    {
+      "id": "H04",
+      "title": "Early production, engine and installation history",
+      "project_relative_source": "archive/release_r07_state_before_share/README_historical.md",
+      "sha256": "f273dbefbb2e018f1ae4c8d480399605940a61ec784447fa2daf6555b0800e82",
+      "bytes": 10442,
+      "public_source_included": false
+    },
+    {
+      "id": "H05",
+      "title": "Original body and clothes adaptation",
+      "project_relative_source": "work/body_and_shorts/HANDOFF.md",
+      "sha256": "e71f9dc5d27517f6cedbd134aabac2eb6627faeea1dbd6f397f760566716a2c3",
+      "bytes": 5913,
+      "public_source_included": false
+    },
+    {
+      "id": "H06",
+      "title": "Original cute head adaptation",
+      "project_relative_source": "work/cute_head/README.md",
+      "sha256": "1549b244a8c3ee0bd7806f3fa1f4c3839fa6be80b39fd0b14ec207de13bcb30d",
+      "bytes": 4464,
+      "public_source_included": false
+    },
+    {
+      "id": "H07",
+      "title": "Continuous body pivot",
+      "project_relative_source": "work/revision_v05/jam_continuous_body_study_r01/README.md",
+      "sha256": "46ef9ff51b2e5ea12facf93d63c62577ceb378073159f2a7547a4ad93145c793",
+      "bytes": 5825,
+      "public_source_included": false
+    },
+    {
+      "id": "H08",
+      "title": "Rejected shoulder shrink",
+      "project_relative_source": "work/revision_v05/shoulder_pose_diagnostic/REJECTED_LOCAL_SHRINK_CANDIDATES.md",
+      "sha256": "113f15e513b5618cbc00aec2bb74fbedb7b70c06fac754c18daaffc407a02dda",
+      "bytes": 639,
+      "public_source_included": false
+    },
+    {
+      "id": "H09",
+      "title": "Native export and material contract",
+      "project_relative_source": "work/toolchain/PRODUCTION_PIPELINE.md",
+      "sha256": "53866715e29bb88e3c4803f64364da4f96b1598db16c29e40910feed34650862",
+      "bytes": 16916,
+      "public_source_included": false
+    },
+    {
+      "id": "H10",
+      "title": "Native skin weight contract",
+      "project_relative_source": "work/revision_v05/native_weight_pipeline/README.md",
+      "sha256": "121e8a68b9f303132b3d0bfdb095b78188e666094e51518678855313ddba8957",
+      "bytes": 8524,
+      "public_source_included": false
+    },
+    {
+      "id": "H11",
+      "title": "Gun shared detail redirect",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_weapon_texture_revision_r08/WEAPON_DETAIL_PATCH.json",
+      "sha256": "25d3693f132ac503448f055ced6d93d9e1a5f8e7c78962fbe52f5d3623100c39",
+      "bytes": 341104,
+      "public_source_included": false
+    },
+    {
+      "id": "H12",
+      "title": "Intro pupil depth diagnosis",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/diagnose_intro_pupil.py",
+      "sha256": "8bdfeeb608c32b4e160c65eecd217d857ecd00b10e29f20624dfbe19a5f0accf",
+      "bytes": 4496,
+      "public_source_included": false
+    },
+    {
+      "id": "H13",
+      "title": "Brow fixed shade control diagnosis",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/build_brow_shade.py",
+      "sha256": "b11a822843471cb08bbfadf6d071aca57e2d7d7c08cf680c1da37a3e6960337d",
+      "bytes": 3105,
+      "public_source_included": false
+    },
+    {
+      "id": "H14",
+      "title": "R09 finite all-frame and audio review",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/SHARE_RELEASE_R09.json",
+      "sha256": "076641146523e259240349f0676795850d01ebd5471212072fec1edb53ca447a",
+      "bytes": 5217,
+      "public_source_included": false
+    },
+    {
+      "id": "H15",
+      "title": "Selected expression C",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_skin_gloss_r09_2/EXPRESSION_SELECTION.json",
+      "sha256": "10f7bbe5d77d993e4876a5cfd02343867ab3109075e677287bb7b517da64ae7c",
+      "bytes": 297,
+      "public_source_included": false
+    },
+    {
+      "id": "H16",
+      "title": "Skin cooked texture audit",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_skin_gloss_r09_2/ACTUAL_COOK_AUDIT.json",
+      "sha256": "14914e88ee7834573d03c55bac648b0403d623182a578f12cb80c518612504e0",
+      "bytes": 4772,
+      "public_source_included": false
+    },
+    {
+      "id": "H17",
+      "title": "Accessory palette audit",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_skin_gloss_r09_2/accessory_palettes/GPU_AUDIT.json",
+      "sha256": "ea29ec730b3c480b00f5bdbefc44f7bd254f6dd1a34ad9ac396376716a535b1a",
+      "bytes": 13648,
+      "public_source_included": false
+    },
+    {
+      "id": "H18",
+      "title": "R09.3 final state",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/FINAL_STATE.json",
+      "sha256": "d4540a7dbe49f2c775c2ced1594a5f46b49c1d60877e48d4048b25e76755e2f0",
+      "bytes": 3262,
+      "public_source_included": false
+    },
+    {
+      "id": "H19",
+      "title": "R09.3 animation cooked audit",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/WinHarmony06/ACTUAL_COOK_AUDIT.json",
+      "sha256": "cfa675ed47d7764db2b3466cd7942c43eb27adc088cfb8bf062443b524553365",
+      "bytes": 7385,
+      "public_source_included": false
+    },
+    {
+      "id": "H20",
+      "title": "R09.3 mouth geometry audit",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/WinHarmony06/GEOMETRY_AUDIT.json",
+      "sha256": "ed715692df977a39de860db090da8036fe7a79bd544706288090e19d0128cfc5",
+      "bytes": 38000,
+      "public_source_included": false
+    },
+    {
+      "id": "H21",
+      "title": "R09.3 release inventory",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/PAK_VALIDATION.json",
+      "sha256": "7f838bd1de74994425822971abee8fc3d10b203c4efc8547d6e782229d9d891f",
+      "bytes": 895,
+      "public_source_included": false
+    },
+    {
+      "id": "H22",
+      "title": "Cleanup record",
+      "project_relative_source": "work/cleanup_20260915_071519/RESULT.json",
+      "sha256": "59361c469b2f8363ab2d1b88a6f8d6e832e59d0f33f8b453b930d12d780b18e3",
+      "bytes": 401,
+      "public_source_included": false
+    },
+    {
+      "id": "H23",
+      "title": "R09.3 visual audio scope",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/VISUAL_AUDIO_REVIEW.json",
+      "sha256": "e6c90a4fff23e5ce8a5714037e0f57cb56426d47d5842b1d3b5809c997bce192",
+      "bytes": 5115,
+      "public_source_included": false
+    },
+    {
+      "id": "H24",
+      "title": "R09.3 constrained mouth solver",
+      "project_relative_source": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/constrain_win_mouth_v2.py",
+      "sha256": "a06554bcbc6e430311712037b03bf345228a9ef33b487462fe7196289be1feb3",
+      "bytes": 4905,
+      "public_source_included": false
+    },
+    {
+      "id": "H25",
+      "title": "Tripo candidate evaluation",
+      "project_relative_source": "work/tripo_cli/CANDIDATE_EVALUATION.md",
+      "sha256": "4a5c17cf6af31c17c3fd0e09958842f8a4960afc58ade92914270941f0008ab1",
+      "bytes": 4357,
+      "public_source_included": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {"id":"intent","title":"别人第一眼应该看出哪三个变化？有什么一定要保留？","why":"先把想法和不可改坏的部分分开。"},
+  {"id":"game_build","title":"改哪个游戏、角色和版本？不知道版本也可以，先告诉我游戏位置。","why":"骨架、资源路径和 Cook 工具不能凭游戏名字猜。"},
+  {"id":"scopes","title":"这次包括哪些内容？","options":["body","outfit","face","animation","material","palette","voice"],"multiple":true,"why":"按实际范围跳过不相关阶段；只做语音不需要先建身体。"},
+  {"id":"success_scene","title":"你最在意哪个实际画面：战斗、必杀、入场还是胜利？","why":"选一个能最早判断成败的镜头。"},
+  {"id":"references","title":"已有哪张图或哪个模型最接近？分别想借哪里、哪里不喜欢？","why":"参考可以只借局部；不把整张图自动视为目标。"},
+  {"id":"design_locks","title":"哪些比例、部件、动作或配色必须保留？哪些还没决定？","why":"防止修眼睛时又改坏已经满意的身体。"},
+  {"id":"turnaround","title":"完整正侧背还有哪些未知：脚、背面、发根或衣服开口？需要生成参考吗？","scopes":["body","outfit","face"],"why":"先用 gen/edit 确认补全，再投入建模。"},
+  {"id":"base_source","title":"身体想从哪个连续底模或类似模型开始？先看裸体 rest pose 比例可以吗？","scopes":["body","outfit"],"why":"这是制作底层；最终穿着由你决定。"},
+  {"id":"expression","title":"表情更接近慵懒、戏谑还是其他参考？黑瞳孔、眉和嘴哪个最关键？","scopes":["face"],"why":"先标目标眼缘和注视方向，再求 3D 变化。"},
+  {"id":"motion_locks","title":"哪些动作接触必须保留，例如枪握持、手靠脸、坐姿？","scopes":["body","outfit","face","animation"],"why":"帮助区分身体比例适配与游戏逻辑接口。"},
+  {"id":"palette_plan","title":"做哪些配色？鞋面、鞋底、眼镜和皮肤分别跟随哪一部分？","scopes":["material","palette","body","outfit"],"why":"避免共享材质只完成默认色。"},
+  {"id":"voice_plan","title":"替换哪种语言？源声音、目标事件表、处理参数和试听在哪里？","scopes":["voice"],"why":"声音要进运行资源和对应触发的审查视频。"},
+  {"id":"source_rights","title":"参考模型哪些可直接复用、哪些只研究结构？已知的作者说明在哪里？","why":"来源、引用研究和随包分发是不同用途。"},
+  {"id":"tools_budget","title":"现有建模/引擎工具在哪里？可接受的等待时间和生成费用范围是多少？","why":"先探路再投入长渲染，不要求你先懂全部工具。"},
+  {"id":"review_style","title":"你更方便比较并排图片还是同镜头短视频？每轮最多给三种方案好吗？","why":"让你决定神态，不让你猜技术参数。"},
+  {"id":"distribution","title":"自己玩、朋友试用还是公开发布？用哪个管理器，旧版和备选要怎么保留？","why":"决定打包范围、回滚、实机证据和展示素材。"}
+]
