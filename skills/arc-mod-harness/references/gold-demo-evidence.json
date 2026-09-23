@@ -1,0 +1,145 @@
+{
+  "case": "Gold character replacement for Slayer",
+  "snapshot_date": "2026-09-21",
+  "scope": "Relative identifiers and digests of private case evidence only. Source files, game assets, machine paths and private transcripts are not distributed. This ledger does not execute or independently re-prove the private measurements.",
+  "records": [
+    {
+      "id": "G01",
+      "source_id": "work/ordinary_retarget_r193/ordinary_coverage.json",
+      "sha256": "7ea259adc38996b8c4a4dc2de32f7e4077afcdf91dd89358952f53741a15b8b6",
+      "supports": "Source animation table: 92 ordinary and seven special entries; inventory is not runtime acceptance."
+    },
+    {
+      "id": "G02",
+      "source_id": "work/interactive_demo_r191/review.json",
+      "sha256": "cc2f12aeb59fbc3be4c84af09aa95f73813e1af6df5210760ff02173254a45ae",
+      "supports": "Saved animation transport and first complete ordinary-character native review."
+    },
+    {
+      "id": "G03",
+      "source_id": "work/interactive_demo_r195/combined_final_root_review.json",
+      "sha256": "f7c96bb714709c4c4f67d3e89c7af109d541b4fbb69af93b6b8d8e9c7df73a40",
+      "supports": "Combined development UE camera review and visible demo handoff; no retail Cook claim."
+    },
+    {
+      "id": "G04",
+      "source_id": "work/interactive_demo_r195/backwalk_native_comparison.json",
+      "sha256": "d6c07ba1cf836880876b7ef5d2d52f934469edc08f56f02b5a4b7d2a3b672081",
+      "supports": "Held-backwalk loop evidence; measured seam improvement, not an absolute zero-discontinuity claim."
+    },
+    {
+      "id": "G05",
+      "source_id": "work/interactive_demo_r195/kick_native_verification.json",
+      "sha256": "5affccb533660a8c14611d568200ddf872960110fc582eac7d514ecd64e25aaf",
+      "supports": "Source helper scaling and actual Battle 5K volume comparison."
+    },
+    {
+      "id": "G06",
+      "source_id": "work/interactive_demo_r195/head_pivot_verification.json",
+      "sha256": "82ab8e88a76aa79b78464bf1ab97ad04c0c8c1e17e932c4077e19f7fe09c9c7f",
+      "supports": "Display inverse-bind head pivot correction; source clips and approved face retained."
+    },
+    {
+      "id": "G07",
+      "source_id": "work/interactive_demo_r195/world_release_verification.json",
+      "sha256": "bb6062a0d14064b098630047b2b6c0a01247ca4f99fd56276b57d02ff499920a",
+      "supports": "Actual release pose, world-space fabric and clone/main visibility continuity."
+    },
+    {
+      "id": "G08",
+      "source_id": "work/body_material_r196/native_contract.json",
+      "sha256": "3bb857118b04885a9e0d6c5796017d16675b68821643c5921a247dd2ec8dbcb9",
+      "supports": "Body five-map parameters, UV/color-space and native consumer contract."
+    },
+    {
+      "id": "G09",
+      "source_id": "work/body_material_r196/uv_final_audit.json",
+      "sha256": "8627869ad0a7c9870858ce321b18e71878f7f696292ffeef78d0694e55407f01",
+      "supports": "Body atlas coverage and UV checks; not by itself a shader or runtime acceptance."
+    },
+    {
+      "id": "G10",
+      "source_id": "work/interactive_demo_r195/body_r196b_native_review.json",
+      "sha256": "ef4b82f94bcf4941529c98d570350e6f38643d27fc70b26c0b199706e4b1da0c",
+      "supports": "Matched body/head skin material parameters and actual development UE review."
+    },
+    {
+      "id": "G11",
+      "source_id": "work/shoe_texture_r191/native_material_contract.json",
+      "sha256": "b0235669f3ee914d1785e0850c0905f51487c90ec63d6510025f553269ff1ee9",
+      "supports": "Footwear atlas and source-map transport contract."
+    },
+    {
+      "id": "G12",
+      "source_id": "work/body_normals_r198/native/comparison_b_review.json",
+      "sha256": "af48c7a55b118c62b3bf7490423fab013e2019e243a0280199ab7ddd8245f1cf",
+      "supports": "Matched Battle315/826 normals comparison; local production selection, not a human whole-art approval."
+    },
+    {
+      "id": "G13",
+      "source_id": "work/body_normals_r198/candidate/native_semantic_guard_B.json",
+      "sha256": "3fe2e4f73e4ef00c73c930a22ffbb15aad611f6b6a3071efa355f6228a1a7d74",
+      "supports": "Ordered-corner native readback; includes the unused archive UV3 import exception."
+    },
+    {
+      "id": "G14",
+      "source_id": "work/body_normals_r198/native/skin_uv_channel_audit.json",
+      "sha256": "36eb89c8f87b9d37954e36b55fe1f9aa02e740c9c34349dad62b7ecbbe9e4614",
+      "supports": "Actual base/outline material chains consume UV0-2, not archive UV3."
+    },
+    {
+      "id": "G15",
+      "source_id": "work/backwalk_transition_r200/native_candidate_verification.json",
+      "sha256": "253760d66c104a7ab4539cff86863d004e7397a4bd2495acf5bf9ba1466bf0b2",
+      "supports": "First-entry support holds repaired; original14s loop retained; this particular capture only reached stopping, not stable idle."
+    },
+    {
+      "id": "G16",
+      "source_id": "work/throw_volume_r200/screen_summary.json",
+      "sha256": "9c88b4be35f8c8f6e9ac7ed80e7a3c56ac4568d06db40eb452585b2858693206",
+      "supports": "99-route actual-skin scale screening; distinguishes physical consumer mismatch, intended hand scaling and weight/pivot issues."
+    },
+    {
+      "id": "G17",
+      "source_id": "work/throw_volume_r200/native_throw_jump_pose_match.json",
+      "sha256": "79f85af4a2a4a5be68494337a4e264f68ac3cf1b246022096e0c82721c169663",
+      "supports": "Throw and aerial kick actual-pose matching and main/foot/cape protection."
+    },
+    {
+      "id": "G18",
+      "source_id": "work/throw_volume_r200/native_sp06_pose_match.json",
+      "sha256": "c3e2a4f08c0c10e8b1e09bf5c5dd42b4d06a3c5bf95b284630740b4cce74a9f5",
+      "supports": "Registered-input SP06 consumption, hitstop pose, foot and cape guards; FX limits unobstructed visual judgement."
+    },
+    {
+      "id": "G19",
+      "source_id": "work/face_full_coverage_r207/candidate_h/HARNESS_FACE_EVIDENCE_ZH.md",
+      "sha256": "101aae717cf4e8670cb914ae262b9e4a5d0b9bb3b4cd8c38ab06197c600cb5b1",
+      "supports": "Actual source resolver, F/G/H script inputs/outputs and known limits; no completed special hand-keyed sequence."
+    },
+    {
+      "id": "G20",
+      "source_id": "work/face_full_coverage_r207/candidate_h/native950_g_h_pairing.json",
+      "sha256": "10e01535ff01ed36f649241f681d49a44f288a4a25cb88baaf1e9bed903d868c",
+      "supports": "Matched native Entry950/951 source CS and morph weights; not whole-face art approval."
+    },
+    {
+      "id": "G21",
+      "source_id": "work/face_full_coverage_r207/candidate_h/native_h_guard_summary.json",
+      "sha256": "bb615d62a68711e5f666ac163f686f8ee4450334eca7a45f2e723685131bf998",
+      "supports": "Four H assets imported with protected position/index and selected authored-normal contract."
+    },
+    {
+      "id": "G22",
+      "source_id": "work/parallel_r209/outline/chaos_audit/CHAOS_GGST_OUTLINE_AUDIT_ZH.md",
+      "sha256": "bb351ea08d25c71eb6ed6595d9787b0d2616708b9edb002e978cdbe25bbf260c",
+      "supports": "Read-only audit of actual tangent/section/vertex-alpha contracts and historical folding repair; no new visual acceptance."
+    },
+    {
+      "id": "G23",
+      "source_id": "work/parallel_r209/sol/SOL_NATIVE_FIX_R209_ZH.md",
+      "sha256": "c902f7c53266b1bf6a59ce9250b1a15910d081e2df5672baee589c33d959a04c",
+      "supports": "Same-process frozen-pose ScreenSpaceZOffset-only causal test and fresh-start repeat, preserving geometry and GPU morphs; not whole-demo acceptance."
+    }
+  ]
+}

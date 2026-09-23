@@ -1,0 +1,77 @@
+{
+  "document_kind": "synthetic_readable_example",
+  "executable_input": false,
+  "schema_version": 1,
+  "purpose": "Illustrate a project-specific skin material contract; no assets, importer or verified results are supplied.",
+  "evidence_status": "unverified_example",
+  "source_correspondence": {
+    "method": "ordered source polygon and corner ancestry",
+    "matched_corner_count": null,
+    "unmatched_policy": "retain the current field until a local replacement is justified",
+    "normal_split_policy": "do not collapse distinct normals at identical positions or UVs"
+  },
+  "atlas": {
+    "proposed_size": [4096, 4096],
+    "packing_margin_pixels": 32,
+    "padding_owner": "one validated surface-owner field shared by all five maps",
+    "coverage_alpha_is_material_alpha": false,
+    "positive_area_overlap_count": null,
+    "zero_pixel_center_triangle_count": null,
+    "minimum_direction_density_px_per_mm": null
+  },
+  "uv_layers": [
+    {"index": 0, "unique_name": "ExampleSkin_AtlasUV0", "role": "primary skin maps"},
+    {"index": 1, "unique_name": "ExampleSkin_DetailUV1", "role": "detail map"},
+    {"index": 2, "unique_name": "ExampleSkin_AlternateUV2", "role": "optional alternate route; enable only after graph inspection"},
+    {"index": 3, "unique_name": "ExampleSkin_SourceArchiveUV3", "role": "authoring archive; runtime use is unverified"}
+  ],
+  "textures": [
+    {"logical_id": "example_skin_base", "parameter": "BaseMap", "uv_index": 0, "srgb": false, "sampler": "LinearColor", "rgb_role": "intrinsic pigment", "alpha_role": "shader-specific rim control; verify before assigning values"},
+    {"logical_id": "example_skin_shadow", "parameter": "SssMap", "uv_index": 0, "srgb": false, "sampler": "LinearColor", "rgb_role": "independent shadow palette", "alpha_role": "shader-specific gradation control"},
+    {"logical_id": "example_skin_ilm", "parameter": "ilmMap", "uv_index": 0, "srgb": false, "sampler": "LinearColor", "channels": {"R": "specular multiplier", "G": "shade threshold input", "B": "highlight step control", "A": "innerline blend control"}},
+    {"logical_id": "example_skin_detail", "parameter": "detailMap", "uv_index": 1, "srgb": false, "sampler": "LinearColor", "rgb_role": "detail field multiplied by ILM alpha", "alpha_role": "unused only if the inspected graph confirms this"},
+    {"logical_id": "example_skin_outline", "parameter": "OutlineMulMap", "uv_index": 0, "srgb": false, "sampler": "LinearColor", "rgb_role": "outline tint multiplier", "alpha_role": "inspect the selected outline graph"}
+  ],
+  "material": {
+    "channel_semantics_status": "example GGST-style family; re-derive for the selected parent",
+    "actual_base_parent": null,
+    "actual_outline_parent": null,
+    "runtime_scalar_vector_source": null,
+    "restore_each_consumer_texture_set_after_dynamic_copy": true
+  },
+  "import_intent": {
+    "preserve_rgb_at_zero_alpha": true,
+    "fill_zero_alpha_rgb": false,
+    "apply_gamma_to_control_channels": false,
+    "flip_green_channel": false,
+    "compression_format": null,
+    "streaming_policy": null,
+    "actual_imported_uv_indices_verified": false
+  },
+  "vertex_colors": {
+    "encoding": "linear control values",
+    "current_values": null,
+    "donor_inheritance_complete": false,
+    "unmatched_values_are_donor_evidence": false
+  },
+  "normal_fields": {
+    "clothed_rest": {"logical_id": "example_N_clothed", "transport": "fit to the clothed consumer's own rest deformation"},
+    "natural_rest": {"logical_id": "example_N_natural", "transport": "fit to the natural consumer's own rest deformation"}
+  },
+  "consumers": [
+    {"role": "clothed", "passes": ["base", "outline"], "normal_field": "clothed_rest"},
+    {"role": "natural", "passes": ["base", "outline"], "normal_field": "natural_rest"},
+    {"role": "natural_clone", "passes": ["base", "outline"], "normal_field": "natural_rest"}
+  ],
+  "verification": {
+    "saved_sourceart_rgba_matches": null,
+    "zero_alpha_rgb_preserved": null,
+    "offline_mip_sampling_passes": null,
+    "native_gpu_sampling_passes": null,
+    "runtime_camera_pose_light_materials_matched": null,
+    "full_frame_and_native_pixel_detail_recorded": false,
+    "archive_uv_exceptions": [],
+    "human_acceptance": null,
+    "packaged_game_verified": false
+  }
+}

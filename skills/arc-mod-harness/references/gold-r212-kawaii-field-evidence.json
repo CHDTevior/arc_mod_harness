@@ -1,0 +1,44 @@
+{
+  "case": "R212 missing editor-only Kawaii member and R213 staged field recheck",
+  "evidence_root": "Private case project root",
+  "scope": "Relative identifiers and digests only. No game assets, minidumps, machine paths or private helper source are distributed. Field compatibility checks do not establish retail visual acceptance.",
+  "records": [
+    {
+      "source_id": "work/retail_fatal_r212/reference_audit/PROVEN_MEMBER_FAILURE.md",
+      "sha256": "6afcbeb7106c7077fe39902d4022ca4adb2ea751678c755f73f5349bb57e77b5",
+      "supports": "Crash bytecode and reconstructed runtime class layout identify the missing editor-only owner/member without inventing absent dump heap contents."
+    },
+    {
+      "source_id": "work/retail_fatal_r212/reference_audit/private_fix/AUTHOR_AND_FRESH_GUARD.json",
+      "sha256": "500b5257f86363fc38749262741dc89ac610015dff45bf56f7b6380aaebec623",
+      "supports": "Only 28 optional Guid pins removed; original graph/pins/CDO preservation and 252 collision shape checks after save/reopen."
+    },
+    {
+      "source_id": "work/retail_fatal_r212/reference_audit/FIXED_KISMET_SEMANTIC_GUARD.json",
+      "sha256": "0f7e42ccce3a6adb45065a975dd767b170726a743d01c32cce17a8a8cafd8d1f",
+      "supports": "Normalized full bytecode semantics unchanged after removing exactly the authorized Guid assignments."
+    },
+    {
+      "source_id": "work/retail_fatal_r212/reference_audit/FIXED_ALL_KAWAII_REFERENCE_GUARD.json",
+      "sha256": "957ce9efed8fcb5ccde77d75307abb1d4212312f606200e66af34adc2db4b15f",
+      "supports": "Full-package discovered Kawaii users and native owner/member fields resolve, including preserved body-tail data."
+    },
+    {
+      "source_id": "work/retail_fatal_r212/reference_audit/private_fix/FOUR_AB_COOK_MANIFEST.json",
+      "sha256": "123d7b5f74bf9fd49c578896ac562b928b349e094abc7809ead013b2fb5685f1",
+      "supports": "Four original-path AB packages and exactly eight frozen cooked companions."
+    },
+    {
+      "source_id": "work/retail_fatal_r212/reference_audit/private_fix/fix_helper.c.in",
+      "sha256": "01d3e7e7fc685a86d24c7bd4aa4da854e5bfff36ea1c241ca4bee330de6bc02a",
+      "supports": "Concrete CPF_EditorOnly test, optional-pin bShowPin=False, orphan-pin preservation disable, reconstruct/compile/save implementation; source not distributed."
+    },
+    {
+      "source_id": "work/retail_visual_r213/KAWAII_FIELD_GUARD.json",
+      "sha256": "92e9c48272e7094f761e0a284e14cf3b2f233cc2c179acdef1f3d5d09033d443",
+      "supports": "Final R213 staging snapshot:1034 packages scanned,six Kawaii ABs,fourteen nodes,64 functions,2554 owner/member references,zero unresolved. Earlier622-package snapshot digest retained; same field coverage,not retail acceptance.",
+      "previous_snapshot_sha256": "97b22fb2645f9010a5a12b9eec73038f91481ddc5b3df04a8a45034a75bc610f",
+      "previous_snapshot_packages": 622
+    }
+  ]
+}

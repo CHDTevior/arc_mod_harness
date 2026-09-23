@@ -1,0 +1,41 @@
+{
+  "case": "Gold R213 original-path material-family UV repair",
+  "scope": "Private evidence identifiers and digests only; assets and machine paths not distributed. Developer UE and cooked data checks are not retail visual acceptance.",
+  "records": [
+    {
+      "source_id": "work/retail_visual_r213/materials/ROOT_CAUSE_ZH.md",
+      "sha256": "4df3c8effa15184a14236b22c98abd3850c892f5a5a06fcb15bad5f754162c71",
+      "supports": "UV declaration order versus SDK TypedIndex; scope and repair."
+    },
+    {
+      "source_id": "work/retail_visual_r213/materials/delivery/MANIFEST.json",
+      "sha256": "06256f95e683ebc067a51b6cddde5e9535faaaa666138cfbf7cca829032197a9",
+      "supports": "One original-path body mesh, two cooked companions."
+    },
+    {
+      "source_id": "work/retail_visual_r213/materials/NATIVE_UV_REPAIR_GUARD.json",
+      "sha256": "8d5199cb4ac7d6be67244114aeed2791bb1ebe4466f25adcae7954d400bca46b",
+      "supports": "Saved native UV families and unchanged render attributes."
+    },
+    {
+      "source_id": "work/retail_visual_r213/materials/FULL_SKIN_WEIGHT_GUARD.json",
+      "sha256": "92ed230dbc772b58a6af61e64a80070d20dd4626c3a938fb4e15bdce83a9434d",
+      "supports": "All 473 clusters, weights and binding transforms."
+    },
+    {
+      "source_id": "work/retail_visual_r213/materials/COOKED_UV_REPAIR_GUARD.json",
+      "sha256": "6d038b43801ba9f824dc1275c4e076c441f8cf5340388a62e1d77a69d6f17cb7",
+      "supports": "Actual cooked render-buffer family values and limits."
+    },
+    {
+      "source_id": "work/retail_visual_r213/materials/DEPENDENCY_GUARD.json",
+      "sha256": "84ba98a20429304524948e92d9f8abef6bf03dea5654d3563db047e94195fd7a",
+      "supports": "Unchanged dependency graph."
+    },
+    {
+      "source_id": "work/retail_visual_r213/materials/NATIVE_SHADER_PREVIEW.json",
+      "sha256": "c2959bdc44957673df688905f45f3e05da9fe7f21caac376e40fa056b44c799d",
+      "supports": "Bounded development UE native material-pool visual review, not retail acceptance."
+    }
+  ]
+}

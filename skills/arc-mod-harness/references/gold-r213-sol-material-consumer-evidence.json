@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "Private project evidence index only; no game assets, machine paths or PDB offsets are distributed. Native development D3D validation is not user retail acceptance.",
+  "entries": [
+    {
+      "id": "SOL-CONSUMER-BEFORE",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/ordinary_sol_sceneproxy/native_trace.jsonl",
+      "sha256": "8e8d7af2941103f3dceafe12eca44285ed3afbc0bdcd09b80922f5e977b83b8a",
+      "observation": "Both frame section10 consumers are WorldGridMaterial while component slot6 remains native MID."
+    },
+    {
+      "id": "SOL-CONSUMER-AFTER",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/ordinary_sol_morph_usage/native_trace.jsonl",
+      "sha256": "bcabfa30822b8f30ad2936e608523fac7e7b932037e86032e5aa6545ab449702",
+      "observation": "All 24 sections match component materials; default fallback count 0."
+    },
+    {
+      "id": "SOL-OUTPUT-AFTER",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/ordinary_sol_morph_usage/frame_0350.png",
+      "sha256": "af53b7be8eb3de40a06580a2670d36fb1199c1d2e83e54bc988695d55031fb88",
+      "observation": "Original 3840x2160 native development GPU view reviewed: both opposed-facing glasses complete; P2 idle pose differs."
+    },
+    {
+      "id": "SOL-GRAPH-GUARD",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/frame_base_morph_candidate/INDEPENDENT_GRAPH_GUARD.json",
+      "sha256": "ef22bc57876d0ac5ff858c3d050aa865a363d780163142fe72f471eaa899ea26",
+      "observation": "432 expression semantics, outputs, parameter GUIDs and effective parameter chain unchanged; only MorphTargets usage false to true."
+    },
+    {
+      "id": "SOL-PROOF-SUMMARY",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/PROVEN_SOL_MATERIAL_CONSUMER_FAILURE.json",
+      "sha256": "91e2b6eaf95561b9a6a3797ee9ef9539ee721d0587331a21d1929bec98405371",
+      "observation": "Source/raw remap/runtime consumer/native GPU causal chain with limitations."
+    },
+    {
+      "id": "SOL-COOKED-GUARD",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/ACCEPTED_SOL_COOKED_INDEPENDENT_GUARD.json",
+      "sha256": "3cccb44fcfc5fa53d0c4cec1ca157bf3994a18616f7f583b41dfc1aa98355fec",
+      "observation": "Accepted manifest revision 2, three native-tested author assets, six exact cooked files, cooked usage flag and parent chain verified."
+    },
+    {
+      "id": "SOL-STOCK-PROVIDERS",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/ACCEPTED_SOL_RETAIL_STOCK_PROVIDERS.json",
+      "sha256": "3b9b577aec5046b5ffc384a88aaf7187f4fe5d87355da1dd31ba6b03c21c1796",
+      "observation": "24 external stock packages and companion mounts authenticated against a freshly read original retail PAK index; no stock payload copied."
+    }
+  ],
+  "evidence_root": "Private case project root; every relative_evidence is relative to this root."
+}

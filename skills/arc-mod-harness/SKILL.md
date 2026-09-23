@@ -30,6 +30,47 @@ existing `project.json` first. `next` suggests one unanswered question; it is a
 question queue, not a substitute for reading the author's answer or spotting a
 contradiction. Use `answer` to save actual answers. Keep proposals labeled as such.
 
+## Choose the replacement route at project start
+
+For a character replacement, first map the current game's actual package/object
+paths and consumers. Prefer Cooked assets at those original paths inside a mod
+PAK, letting the game load the replacements. This is a starting architecture
+decision, not a packaging choice deferred until the artwork is finished.
+
+A supplied UE development project is a reference for the game's resource
+structure, skeletons, sections, material/outline passes, animation tables,
+AnimBlueprints and compatible Cook toolchain. Inspect and reuse those contracts;
+do not infer that the author wants an independent demo or an editor-only display
+assembly reimplemented in Shipping. Keep the installed game authoritative where
+its data differs from the development project.
+
+Prove a small original-path PAK in the installed game early, alongside visual
+development. Include the actual consumer and its material/animation behavior.
+Check separate character-select, battle, entry, victory, cinematic and mesh-swap
+routes as applicable; a default animation table need not serve all of them.
+Record **authored asset → selected Cook output → packaged path → actual consumer**
+so completed work is not silently left out of the release.
+
+When the author wants a normal replacement mod, the first native character load
+must already show the complete replacement. Do not present a stock character or
+intermediate carrier while a runtime script constructs the visible character.
+Keep approved body, head, materials and animation consumers in the same complete
+installable release; preserve this behavior across scene entry and mesh switches.
+
+Use added components or a runtime bridge only for a demonstrated requirement
+the native resource structure cannot carry. Scope each exception to that behavior;
+one extra component does not justify rebuilding the whole character assembly.
+An optional controller may animate native, predeclared components without being
+responsible for constructing the visible replacement. A manual component fixture
+or successful asset load alone is not a real character-lifecycle acceptance test.
+For the worked route selection and failure cases, read
+[cook-install-example.md](references/cook-install-example.md).
+
+When generating or modifying Blueprints, verify compiled member references against
+the target runtime's declaring types, including editor-only struct fields. A
+successful editor execution or Cook does not prove those fields exist in Shipping;
+the worked collision-node failure is in the same reference.
+
 ## Build a target the author can recognize
 
 Read [visual-targets.md](references/visual-targets.md). Use the host's image
@@ -50,11 +91,20 @@ concepts are never evidence that the 3D model, animation or installation works.
 ## Advance through relevant stages
 
 Read [workflow.md](references/workflow.md) and [adapters.md](references/adapters.md).
+Before unattended UE extraction, import, Cook or capture, follow the adapter's
+[background-tool rules](references/adapters.md#ue-background-tools): console tools
+can still open modal plugin-error dialogs. Preserve diagnostics and verify output.
 For a full character: in-game concept + turnarounds → body/rig candidate assessment →
 continuous unposed anatomical base → clothes and accessories → source rig and motion
 checks/adaptation → material/palettes → critical
 animation frames → final runtime package. Voice joins the relevant trigger tests.
 Texture-only and voice-only changes skip irrelevant geometry stages.
+
+For an incremental voice-only update, read
+[gold-r217-voice-v5-example.md](references/gold-r217-voice-v5-example.md).
+Compare final audio against the actually installed baseline, retain native alias
+paths, and explicitly withdraw old overrides when restoring stock voices.
+Preserve all non-voice assets and distinguish container verification from listening.
 
 Read [base-selection.md](references/base-selection.md) for body/outfit changes.
 Investigate an existing same-target-character nude/base mod with a close body shape
@@ -69,19 +119,64 @@ image edit/reference → modeling/retopology loops where useful. Separate rigid 
 skinning and secondary-motion support. A generated rig is not target-game compatibility.
 Record `component-plan.md` and `subtask-handoff.md`; reference models stay out of runtime.
 
+For hand-keyed stylized motion, cinematics or authored facial normals, read
+[animation-presentation.md](references/animation-presentation.md). Preserve source
+pose holds, deformation, visibility and mesh-switch events; judge the actual game
+camera with full materials. Do not flatten facial shadows or smooth away the timing.
+For a concrete face-driver chain, iris/lash repairs and the boundary between
+verified adaptation and future camera-specific hand-keying, read
+[gold-face-example.md](references/gold-face-example.md).
+For ASW silhouette outlines, internal linework or Tangents/vertex-alpha failures,
+read [stylized-linework.md](references/stylized-linework.md). Distinguish native
+outline passes from painted details and Motomura geometry/UV work; verify the
+current shader contract before applying lessons from Xrd or another character.
+For concrete body-animation retargeting, raw track transport, UE local T/Q/S,
+runtime routes or variant/visibility failures, use
+[retargeting-workflow.md](references/retargeting-workflow.md). It includes the
+verified workflow, source-project script roles, and their portability limits.
+For a worked GGST body-swap example, including ordinary/special body routes,
+contact fixes and a runnable synthetic T/Q/S exercise, read
+[gold-retarget-example.md](references/gold-retarget-example.md).
+For a request to preserve hitboxes or gameplay, read
+[gold-r214-gameplay-preservation-example.md](references/gold-r214-gameplay-preservation-example.md).
+Separate direct combat-data providers from typed script position parameters,
+animation clocks, root motion, notifies and indirect socket consumers. Preserve
+unparsed or untraced scope; unchanged BBS alone is not universal behavior proof.
+
+When a separately animated cape drifts after a body retarget, read
+[gold-r216-cape-anchor-example.md](references/gold-r216-cape-anchor-example.md).
+Measure source and target attachment anchors at actual held samples, identify all
+shared consumers, and preserve cape shape and gameplay clocks while correcting
+only the necessary clip-space position. Global fit is not an action-specific fit.
+
 For texture clarity, UV, shading or palette work read
 [texture-uv-material.md](references/texture-uv-material.md). Trace source detail,
 resampling, UV coverage, actual material/UV routes, color/alpha semantics and native
 mip residency separately. Use `surface-audit.md`; do not equate an 8K file with useful
 in-game texel density or prescribe UV changes for an unverified streaming problem.
+For the complete UV-to-runtime material example and body-normal recovery, read
+[gold-material-example.md](references/gold-material-example.md). Its sample
+contract is documentation, not an engine importer or a verified asset bundle.
+For color-switch failures or shared loading materials, read
+[gold-r214-color-transition-example.md](references/gold-r214-color-transition-example.md).
+Include both transition pools and every populated slot. A shader lookup fatal is
+not proof of a missing package; bind the exact target-platform shader to final
+cooked bytes and keep failed Editor-layout loads separate from successful proof.
+
+For external cinematic victim routes, body/head staging drift, unchanged-looking
+material graphs with stale cooked shader code, or a reported performance drop,
+read [gold-r218-victim-fd-performance-example.md](references/gold-r218-victim-fd-performance-example.md).
+Enumerate non-default animation consumers, preserve cinematic placement separately
+from proportion retargeting, and audit material instances owning static shaders.
+Measure physics, animation, draw submission and texture residency separately;
+static resource budgets and asset counts do not prove a frame-rate bottleneck.
 
 Use [theresa-dizzy-example.md](references/theresa-dizzy-example.md) for a hypothetical
 starter conversation and [chaos-subtasks.md](references/chaos-subtasks.md) for actual
 worked examples, including failed and paused branches. Do not turn a hypothetical
 planning question into a generation job or a new game project without user intent.
 
-Prove a tiny export/import/Cook round trip early, while developing the visual
-target. Keep the known-working baseline, authored source, native import and cooked
+Keep the early verified baseline, authored source, native import and cooked
 result separate. Use discovered engine versions, skeleton data and source camera
 records. Never invent a compatible engine, bone mapping, shader channel or timestamp.
 
@@ -127,6 +222,13 @@ depend on tools, source projects or another mod being present on the friend's PC
 Inspect package contents and hashes, installed bytes, manager loadout and actual
 game output separately. Do not claim a source-camera engine preview is gameplay,
 or a copy-rule simulation is a tested online one-click install.
+
+For an actual Cook → original-path PAK/SIG → manual/Unverum installation example,
+read [cook-install-example.md](references/cook-install-example.md). It includes
+full extraction hashes, exact manager fields, backups outside the entire Paks
+tree, and a runnable synthetic exercise. Establish the retail consumer early:
+new-path data packages need a deployable runtime; editor drivers do not ship by
+being cooked. Keep installation evidence separate from live game acceptance.
 
 `release-plan` validates the declared dependency graph, not a PAK binary. The game
 adapter must extract/import the real asset inventory into that graph. `check

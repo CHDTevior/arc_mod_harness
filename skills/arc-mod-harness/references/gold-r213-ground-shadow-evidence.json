@@ -1,0 +1,58 @@
+{
+  "case": "Gold replacement for Slayer: R213 missing ground silhouette shadows",
+  "snapshot_date": "2026-09-22",
+  "scope": "Relative case identifiers and SHA-256 digests only. No private reports, engine source, game assets, machine paths or transcripts are redistributed. This index is not an executable port.",
+  "stage_boundary": "Supplied development UE native-consumer previews and source/cooked data checks. Two bodies are frozen candidates; final three heads require owner integration. All candidates remain pending retail-user acceptance. The separate SOL frame visibility defect is not fixed by this case.",
+  "invalidation": "Mesh, section order, material, engine depth behavior, animation/timing or camera changes invalidate affected old evidence. A digest is not a human acceptance decision.",
+  "records": [
+    {
+      "id": "RS01",
+      "source_id": "work/retail_visual_r213/ground_shadow/ROOT_CAUSE.json",
+      "sha256": "cc6cf697e68955f59cc352b52ad120875f09a691d1cff0acb20f1accb66387b1",
+      "evidence_kind": "development-UE-native-source-and-replacement-audit",
+      "supports": "Matching component switches and bounds, original shadow section structure, ASW name-driven import flag, depth-pass implications and actual minimal correction."
+    },
+    {
+      "id": "RS02",
+      "source_id": "work/retail_visual_r213/ground_shadow/AUTHOR_MESH_GUARD.json",
+      "sha256": "1bb5505486854318fd64d5f4541bd7e028a9ad3b0ab95a7d6d1cfad5898e6016",
+      "evidence_kind": "full-native-author-geometry-and-metadata-comparison",
+      "supports": "Every native vertex channel, all12 skin influence slots, bone maps, indices, UV3 family integers, bind/bounds/material/ASW metadata; explicit deprecated author normalization."
+    },
+    {
+      "id": "RS03",
+      "source_id": "work/retail_visual_r213/ground_shadow/COOKED_MESH_GUARD.json",
+      "sha256": "7745a2a1fb5265abf5b12b5837a62bdea1a5e17fa2c36bd176e1a873cb72a688",
+      "evidence_kind": "entire-cooked-native-export-comparison",
+      "supports": "Complete body and natural-body exports differ only at14+2 independently located section-shadow boolean bytes; restoring those bytes yields exact baseline payloads."
+    },
+    {
+      "id": "RS04",
+      "source_id": "work/retail_visual_r213/ground_shadow/NATIVE_MOVEMENT_GUARD.json",
+      "sha256": "81c4fc44f54ed1b29d23ea7f5a6d405cc3c2c377e2eae57e09c25580f77fce85",
+      "evidence_kind": "development-UE-actual-native-GPU-preview-and-clock-observation",
+      "supports": "Pristine baseline/source/candidate camera hashes, native idle/walk/crouch routes and fresh flags, with stage and hidden-natural-body limits."
+    },
+    {
+      "id": "RS05",
+      "source_id": "work/retail_visual_r213/ground_shadow/HEAD_PATCH_CONTRACT.json",
+      "sha256": "546f24058d34c866819625f657e01263d31e17c62d0475c7ba31f949c931c851",
+      "evidence_kind": "final-head-owner-patch-contract",
+      "supports": "Semantic head sections, opaque frame and transparent-lens exclusion; final input hashes and final integrated validation remain the head owner responsibility."
+    },
+    {
+      "id": "RS06",
+      "source_id": "work/retail_visual_r213/ground_shadow/DELIVERY.json",
+      "sha256": "747204a5770b42122fcc4e42d83e8041c196d86d2f36b402ef62da8a2f72b80b",
+      "evidence_kind": "frozen-two-body-minimal-delivery-manifest",
+      "supports": "Two original-path author assets and four cooked companions only, no new external imports or runtime helpers; head assets excluded."
+    },
+    {
+      "id": "RS07",
+      "source_id": "work/retail_visual_r213/ground_shadow/PDB_LAYOUT.json",
+      "sha256": "b7d0fba9abcc2d4b4e2bdc258cdc09308b0ee9cf2dcac237e817fd9acf53cc3e",
+      "evidence_kind": "private-exact-build-layout-identity-audit",
+      "supports": "Local engine/PDB GUID-age identity and native section/vertex layouts for bounded diagnostics, not a retail ABI or portable binary patch."
+    }
+  ]
+}

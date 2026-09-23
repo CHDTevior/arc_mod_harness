@@ -1,0 +1,84 @@
+{
+  "case": "Cook-to-install: Happy Chaos R09.3 and Gold R210",
+  "snapshot_date": "2026-09-21",
+  "scope": "Relative private source identifiers and digests only; no redistributed assets or machine paths. Installation and runtime are separate evidence.",
+  "records": [
+    {
+      "id": "CI01",
+      "project_id": "happy-chaos",
+      "source_id": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/build_release_pak.py",
+      "sha256": "fc3e715aa722bbdecf05ce77f574044a7ea921a4595b5db06f282d275e59c58a",
+      "supports": "Historical exact original-mount manifest, create/test/list/extract and all-file hashes."
+    },
+    {
+      "id": "CI02",
+      "project_id": "happy-chaos",
+      "source_id": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/PAK_VALIDATION.json",
+      "sha256": "7f838bd1de74994425822971abee8fc3d10b203c4efc8547d6e782229d9d891f",
+      "supports": "R09.3 1169 assets / 2417 files; build-stage installed=false."
+    },
+    {
+      "id": "CI03",
+      "project_id": "happy-chaos",
+      "source_id": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/package_release.py",
+      "sha256": "14c67f59d08208ffe0b4519e764ac245b5d90e52692e1ae5243b17453a51a92f",
+      "supports": "Copied prior compatibility SIG; archive CRC/member hashes; no new cryptographic signing."
+    },
+    {
+      "id": "CI04",
+      "project_id": "happy-chaos",
+      "source_id": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/install_r09_3.ps1",
+      "sha256": "fc94e8e5ebf6e37fc1e46863ca2191bcb46b78e59ba7227579ebe0871ab86039",
+      "supports": "Exact Unverum schema; external backup; old-revision disable and unrelated-data preservation."
+    },
+    {
+      "id": "CI05",
+      "project_id": "happy-chaos",
+      "source_id": "work/revision_v05/continuous_jam_production_material_r01/production_win_refinement_r09_3/INSTALLATION_RESULT.json",
+      "sha256": "4b5e9111cffaec02ba1a4dbbc597d43dc6e81ae18c44a28030330c4e652055ec",
+      "supports": "R09.3 installation hashes and 34 unrelated files preserved; runtime_playtest_performed=false."
+    },
+    {
+      "id": "CI06",
+      "project_id": "happy-chaos",
+      "source_id": "work/revision_v05/continuous_jam_production_material_r01/production_od_slacker_expression_r09/unverum_compatibility/R09_3_Final/RESULT.json",
+      "sha256": "2f563506f79b3ca5a44f466198529902b51ecdb2bbe43bb0812b6f8dbdd68c92",
+      "supports": "Offline archive/copy-rule simulation; not a live online one-click test."
+    },
+    {
+      "id": "CI07",
+      "project_id": "gold-ship-slayer",
+      "source_id": "work/retail_runtime_bridge_r210/RETAIL_BRIDGE_HANDOFF_ZH.md",
+      "sha256": "7bf2f84bacc375ebe6c09f6fcba318cb2150078d40a4c39699db7c541a0399df",
+      "supports": "Initial R209 editor-export driver / 16-display consumer audit; later progress tracked separately."
+    },
+    {
+      "id": "CI08",
+      "project_id": "gold-ship-slayer",
+      "source_id": "work/retail_cook_r210/PAK_VALIDATION.json",
+      "sha256": "3ec993e97c13441e027ed8180ad4f9fb899d3d049a3bbfb3b93f51f9cfa3d156",
+      "supports": "338 Review assets / 677 files, zero original overrides, extracted hashes and shader storage."
+    },
+    {
+      "id": "CI09",
+      "project_id": "gold-ship-slayer",
+      "source_id": "work/retail_root_port_r210/PAK_VALIDATION.json",
+      "sha256": "4a95c0a70ea3ad06ffe76f02ad0779a91e45077603d355dd9cc4cd0f83686e6d",
+      "supports": "Three new RootBridge assets / six files; package validation, not retail rendering."
+    },
+    {
+      "id": "CI10",
+      "project_id": "gold-ship-slayer",
+      "source_id": "work/retail_deploy_r210/register_unverum.py",
+      "sha256": "9b45a84b65c3be506cda10607dd6775080d2f5ece3232eab1ec2273f2d44b59a",
+      "supports": "Actual R210 two-PAK library/manager registration and copied current-game SIG logic."
+    },
+    {
+      "id": "CI11",
+      "project_id": "gold-ship-slayer",
+      "source_id": "work/retail_deploy_r210/UNVERUM_INSTALLATION_RESULT.json",
+      "sha256": "3f031c48cd2f42bd600cc4e753ba4e26d943e902eaa1c726a9aa82e541380c0c",
+      "supports": "R210 paired sidecars, Default enablement, 36 unrelated files and other configuration preserved; visual acceptance pending."
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "evidence_root": "private-project-root",
+  "scope": "Relative evidence identifiers and SHA256 only; private reports, source, dumps and assets are not redistributed. Shader-type proof, packaged shader binding, native previews, direct gameplay-data audit, actual installation and retail acceptance are distinct.",
+  "status": "FINAL_R214_METHODS_AND_ACTUAL_INSTALLATION_BOUND_USER_RETAIL_PENDING",
+  "entries": [
+    {
+      "id": "R214-CRASH-TIMELINE",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/CRASH_TIMELINE.json",
+      "sha256": "885f422f638bd62769049a9e4cd593d77e3b4547114f00bd5ebfa2691d4bcb7a",
+      "observation": "Latest saved same-signature crash is PID15212 before the separately observed later process; screenshot-instance attribution remains unknown."
+    },
+    {
+      "id": "R214-SHADER-VF",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/SHADER_VF_POINTER_PROOF.json",
+      "sha256": "955abdfbcc2c2b3a502c04d8df758efc4ac6110df3dfcb07a0f30b0647d02904",
+      "observation": "Exact static shader and Morph VF identities; current failed material-resource heap is absent."
+    },
+    {
+      "id": "R214-SOURCE",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/SOURCE_RULES.json",
+      "sha256": "175566ae20c3d6c0a1c9379dcce8270f41a5b7ee867cff2b349717bb84d21bb8",
+      "observation": "GetShader fatal, dynamic color/container/loading/slot rules, cooked inline shader loading and no-auto-compile branch, bound to local source hashes."
+    },
+    {
+      "id": "R214-DYNAMIC",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/DYNAMIC_MATERIAL_REQUIREMENTS.json",
+      "sha256": "6a45da616d89283188da4761241800bf37ed179bd254cf2d5ef7e8d18d22ada8",
+      "observation": "20 actual dynamic entry routes including 17 final colors, ADV and both loading pools; leafs are referenced, not color-suffix guessed."
+    },
+    {
+      "id": "R214-DIAGNOSIS",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/DIAGNOSIS_SUMMARY.json",
+      "sha256": "fc47c3d68448a873ecfb5dabee2c07c983fe08bd30af29e1fb383dce1924bdba",
+      "observation": "Shader lookup failure proven; native loading deficit and candidate correction recorded separately from absent dump material identity and unreplicated Shipping fatal."
+    },
+    {
+      "id": "R214-ROUTE-MATRIX",
+      "relative_evidence": "work/retail_colors_r214/materials/ROUTE_USAGE_INVENTORY.json",
+      "sha256": "f03dad423c9320630fd8716ed4c0df4c33aa6143876c03bb20e0a3a82063380e",
+      "observation": "39 material containers/sets and 392 material/parent nodes; no Color02-specific missing package established."
+    },
+    {
+      "id": "R214-CANDIDATE",
+      "relative_evidence": "work/retail_colors_r214/materials/loading_morph_candidate/MANIFEST.json",
+      "sha256": "d613beacd28ee08184a230d33d2a04f2087c6560a460a933ebe38014b2bdca4c",
+      "observation": "Five saved candidate assets: two original graph clones with Morph usage and three parent-only leaf changes; not a cooked or retail receipt."
+    },
+    {
+      "id": "R214-GRAPH-GUARD",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/LOADING_GRAPH_INDEPENDENT_GUARD.json",
+      "sha256": "afe48bc9db317e26662594e2d40e23b4d6a2e1126e540aed8706430afa70a345",
+      "observation": "Independent semantic graph, effective parameter and GUID comparison passes with documented legacy save normalizations."
+    },
+    {
+      "id": "R214-NATIVE-AB",
+      "relative_evidence": "work/retail_colors_r214/native_scene/LOADING_TRANSITION_AB.json",
+      "sha256": "94cbd3bedf730dba705271289e8fc0aad5af766af9740fa1b7660ddf95831ff1",
+      "observation": "Native BTL Color01-loading-Color02 consumer, both sides, GIsEditor=false: stock 16/240 WorldGrid and exact Morph VF missing; candidate 0/240 fallback and 92 GT/RT exact shader checks present. Author maps, no Shipping fatal reproduction."
+    },
+    {
+      "id": "R214-COOKED-EDITOR-REJECTED",
+      "relative_evidence": "work/retail_colors_r214/native_scene/COOKED_LOADING_EXACT_GATE.json",
+      "sha256": "d652fbedb696cbc4ef241b8b179465a1391a3fd222b526f3df8f177c61f0ed69",
+      "observation": "Failed direct Cooked-in-Editor test: frozen layout rejected, inline flags false, later recompiled exact shader presence does not count as packaged shader proof."
+    },
+    {
+      "id": "R214-COOK-SHADER-BINDING",
+      "relative_evidence": "work/retail_colors_r214/materials/cook_shader_proof/COOKED_EXACT_SHADER_BINDING.json",
+      "sha256": "d7cd0103a39dc4a919f981e3dd6efdaafb59ebdd462aa44fb4eda8f2408dc1fb",
+      "observation": "Exact WindowsNoEditor target-cache MorphVF/BasePassVS permutation 0 bound to final .uexp resource hash, shader index 56/34, output hashes, full compressed code bytes, uncompressed sizes and vertex frequency."
+    },
+    {
+      "id": "R214-PALETTE-SOURCE",
+      "relative_evidence": "work/retail_colors_r214/palette/PALETTE_SOURCE_REVIEW_MANIFEST.json",
+      "sha256": "026bc2ab7e7183b9a63302cad449f48b87796c50673ccce52c8138ca2d3e4f7a",
+      "observation": "Independent 128 source texture pixel review: semantic masks, alpha and skin preservation, FD body palette consistency."
+    },
+    {
+      "id": "R214-MIC-SCOPE",
+      "relative_evidence": "work/retail_colors_r214/palette/NATIVE_MIC_PALETTE_SCOPE_REVIEW.json",
+      "sha256": "882e297b4e4b4bf164e35749e20a8572de7856ad26a7e4aab89b74bf0a0828a6",
+      "observation": "Independent 160 native MIC scope review: intended Base/Sss pointers only, parent and other effective parameters protected."
+    },
+    {
+      "id": "R214-TABLES",
+      "relative_evidence": "work/retail_colors_r214/palette/TABLE_REQUIRED_REFERENCE_AUDIT.json",
+      "sha256": "47556a4f921bf911b2e00720c82c1624c1467341823826f875dced1b78ef1ba6",
+      "observation": "56 tables distinguish required current-retail references, legal nulls and accepted hidden substitutions; final PTC reference restoration verified."
+    },
+    {
+      "id": "R214-EFF-SOURCE",
+      "relative_evidence": "work/retail_colors_r214/palette/EFF_68_SOURCE_RETAIL_CROSSCHECK.json",
+      "sha256": "37145f06050f831b83bd04cce37836cdac6cd8a1362af9b485a7dd871b4aa517",
+      "observation": "68 original effect material source direct parameters and parents match actual retail; 64 older cooked null references restored while Color90 existing 4 remain intact."
+    },
+    {
+      "id": "R214-TEXTURE-SETTINGS",
+      "relative_evidence": "work/retail_colors_r214/materials/TEXTURE_SETTINGS_RESTORE.json",
+      "sha256": "f3f1fea9dc911fbcb9f45e3b42a6edfdbc8163a4505a2622b829dc4e9bebb58b",
+      "observation": "96 settings-only saves restore original domain samplers/compression ; 32 Body textures already exact ; 128 source PNGs unchanged."
+    },
+    {
+      "id": "R214-TEXTURE-SETTINGS-V2",
+      "relative_evidence": "work/retail_colors_r214/palette/NATIVE_TEXTURE_SETTINGS_V2_REVIEW.json",
+      "sha256": "7c869ade02ef4454be93f095f690d09cf58e93ffc03e3ff005518c670828d786",
+      "observation": "Independent 128 final serialized source identities and original settings, separate from Cooked budget."
+    },
+    {
+      "id": "R214-TEXTURE-BUDGET",
+      "relative_evidence": "work/retail_colors_r214/materials/TEXTURE_COOKED_BUDGET.json",
+      "sha256": "8aadf1981f261d803513928e2c0e5b90ecd1abd3078cc114e71df740b5fa5ddb",
+      "observation": "128 Cooked texture formats, dimensions, mip counts and GPU bytes equal corresponding R213 domains; catalog size is not simultaneous residency."
+    },
+    {
+      "id": "R214-FINAL-AUTHOR",
+      "relative_evidence": "work/retail_colors_r214/materials/FINAL_COLOR_AUTHOR_INPUTS_V2.json",
+      "sha256": "2329d3c2d30a4a129cc8a7ab54d558b48296f684093c7a1893d6630c3993e652",
+      "observation": "Frozen final V2 author inputs for colors, shader, source and preview evidence."
+    },
+    {
+      "id": "R214-FINAL-COOK",
+      "relative_evidence": "work/retail_colors_r214/materials/FINAL_COLOR_COOK_RUN_V2.json",
+      "sha256": "3c6b681258ba19ca08461748ca731922c44d7f24ab5f7f9faa7632857f0e97b1",
+      "observation": "Actual target WindowsNoEditor Cook inputs,command and result; not a preview rendering-map proof."
+    },
+    {
+      "id": "R214-FINAL-NATIVE",
+      "relative_evidence": "work/retail_colors_r214/native_scene/FINAL_V2_NATIVE_PREVIEW_RECEIPT.json",
+      "sha256": "add9e050248e98128309ea27d9c5ed14550e965c57fd93026c27d6eb4dddf226",
+      "observation": "41 native 2K images,4,788 actual proxy rows zero fallback,736 loading exact GT/RT queries,same author inputs; BTL consumers not full async CharaSelect."
+    },
+    {
+      "id": "R214-FINAL-VISUAL",
+      "relative_evidence": "work/retail_colors_r214/palette/FINAL_V2_VISUAL_PALETTE_REVIEW.json",
+      "sha256": "dbfba7c1edc3160faa5968775173f6e978ba6adccfe0dbfe9865063eb72f72b1",
+      "observation": "Independent 41-image review found no blocking palette regressions;visibility limits and no user retail/aesthetic acceptance retained."
+    },
+    {
+      "id": "R214-DELIVERY",
+      "relative_evidence": "work/retail_colors_r214/materials/delivery/FINAL_VALIDATION_RECEIPT.json",
+      "sha256": "a4e8b3cdaad551de1bf5b97df702a8ba9e88319ba19ba0fbe9aeadbee3721615",
+      "observation": "Final 342 packages / 684 Cooked companions proof bundle; immutable integrator payload ledger unchanged."
+    },
+    {
+      "id": "R214-IMMUTABLE-DELIVERY",
+      "relative_evidence": "work/retail_native_assets_r214/final_package_plan/delivery_manifests/all_colors_materials.json",
+      "sha256": "db4f5a55c85f8272946fa333db92fe16bf968d6ca5a486ffa1648003aa65dc1b",
+      "observation": "Integrator immutable material-delivery manifest;new evidence receipt adds validation without changing its payload."
+    },
+    {
+      "id": "R214-GAMEPLAY-SUMMARY",
+      "relative_evidence": "work/retail_colors_r214/gameplay_audit/AUDIT_SUMMARY.json",
+      "sha256": "88f9caad6eb971525ad4992420a3656b66ea5269e21661ef176c492a577134f9",
+      "observation": "Final 1,327 packages / 2,655 files contain no direct combat-data overrides; original providers and typed scripts audited with explicit indirect-path limits."
+    },
+    {
+      "id": "R214-GAMEPLAY-LEDGER",
+      "relative_evidence": "work/retail_colors_r214/gameplay_audit/EVIDENCE_MANIFEST.json",
+      "sha256": "639b44f1a776b7cb6832bd41b2beafe7ce3c4341495559abc4ec531b7d648306",
+      "observation": "15 private audit reports/scripts hashed;read-only production evidence, not redistributed data."
+    },
+    {
+      "id": "R214-GAMEPLAY-CONCLUSION",
+      "relative_evidence": "work/retail_colors_r214/gameplay_audit/CONCLUSION_ZH.md",
+      "sha256": "54a3ab77c6886ea3d1b7d8dc266f2dcf8af2065413527a031c9a7a55ef54ced8",
+      "observation": "Exact direct-data-preservation conclusion, Slayer/socket scope, 5 external decode failures and no Shipping full-chain/runtime battle proof."
+    },
+    {
+      "id": "R214-GAMEPLAY-ANIMATION",
+      "relative_evidence": "work/retail_colors_r214/gameplay_audit/FINAL_ANIMATION_ROOT_MOTION_METADATA.json",
+      "sha256": "d915736a47f58a8f9696cc48a3abbb9a8c52e4f662fbd9db9a97f64bc3698315",
+      "observation": "347 animations parsed; 346 same-path timing equal, 1 new clip separate; no serialized enableRootMotion with source default checked."
+    },
+    {
+      "id": "R214-GAMEPLAY-NOTIFY",
+      "relative_evidence": "work/retail_colors_r214/gameplay_audit/FINAL_ANIMATION_NOTIFY_COMPARISON.json",
+      "sha256": "c43ed0dc0322bf3c5b8bfe5370e2a1007c6e38d96235232d120c86885d797c85",
+      "observation": "4notify-bearing sequences8LoopStart/End semantic events equalretail; not a substitute forBBS/JON timing proof."
+    },
+    {
+      "id": "R214-GAMEPLAY-EXTERNAL",
+      "relative_evidence": "work/retail_colors_r214/gameplay_audit/GLOBAL_AND_VERSIONED_BBS_SOCKET_AUDIT.json",
+      "sha256": "e24c7923dda63594d1dd98b54398cb58a2e6e6bb025101caa76abc2638ecdc2d",
+      "observation": "Expanded 126 packages: 121 decode / 865,247 commands, 5 explicit failures, 213 3D position commands; external consumers not assumed absent."
+    },
+    {
+      "id": "R214-PAK",
+      "relative_evidence": "work/retail_native_assets_r214/final_package_plan/PAK_VALIDATION.json",
+      "sha256": "6a9feba3361da42ec8eec33358b6b5bf25cf2579b4bab753d8392efd1e2527fd",
+      "observation": "Single PAK test/list/extract verification: 1327 packages and 2655 files all extracted hashes exact; no bridge binaries. This creation receipt predates installation."
+    },
+    {
+      "id": "R214-PROTECTED-DELTA",
+      "relative_evidence": "work/retail_native_assets_r214/final_package_plan/R213_PROTECTED_PAYLOADS.json",
+      "sha256": "f778211f2f2397ce1d4aaf7bd1c660267ee71fd0360870aba4b6f0b23aecee58",
+      "observation": "1542 R213 mesh, animation, physics and audio files retained byte for byte in R214 integration."
+    },
+    {
+      "id": "R214-PORTABLE-TOOLS",
+      "relative_evidence": "work/retail_portable_r214/HANDOFF_R214.json",
+      "sha256": "65175aa1252a6b539fc959c790281d27ae838f21b34f8b8e23f40f65acf1b6e4",
+      "observation": "Portable script hashes and preparation handoff; real package and game changes were still false at this earlier stage."
+    },
+    {
+      "id": "R214-PORTABLE-MIGRATION",
+      "relative_evidence": "work/retail_portable_r214/MIGRATION_VALIDATION.json",
+      "sha256": "a75c6534ddaa4de6a1883122a4e766965d8cfb785c03e05bc75dbbad83334055",
+      "observation": "28 Windows PowerShell 5.1 synthetic checks cover exact old receipt migration, ownership of same-hash preexisting files, activeR212 block, currentSIG, changedEXE bytes and unrelatedsettings preservation."
+    },
+    {
+      "id": "R214-PORTABLE-STRATEGY",
+      "relative_evidence": "work/retail_portable_r214/MIGRATION_STRATEGY_ZH.md",
+      "sha256": "f73e1784d7d8f340cde5de76f79ac3c78f9f18295ce3ed90f500ac008899eb7c",
+      "observation": "Preparation,build,preview,retire,install order and protected scope; no development runtime or executable whitelist."
+    },
+    {
+      "id": "R214-ZIP-BUILD",
+      "relative_evidence": "releases/GoldShip_R214_20260922.build.json",
+      "sha256": "c2496b32c20bd731c0711e96a0229c958b40b475e19c52426884cd165f651bd6",
+      "observation": "Real standalone ZIP built with one PAK, no fixture; build receipt binds archive and distribution manifest hashes, retail verification remains false."
+    },
+    {
+      "id": "R214-INSTALLATION",
+      "relative_evidence": "work/retail_deploy_r214/INSTALLATION_RESULT.json",
+      "sha256": "44eae654eaaf886eb66b8559783041ea623ad8662620b951ce3701f6d01f7570",
+      "observation": "Real R214 installation verified by integrator: five recorded changes, four old R213 files retired outside Paks, unrelated settings and 22 other PAK size/mtime preserved; user retail acceptance pending."
+    },
+    {
+      "id": "R214-INSTALLED-RECEIPT",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/INSTALLED_GAME_RECEIPT_SNAPSHOT.json",
+      "sha256": "0ffdf07da81b8b70f5b87db6b397ed26f3a5410e39ab4a338e08f0980d395fc5",
+      "observation": "Byte-exact snapshot of actual game installation receipt: purepak installed, all five changes applied, matching distribution manifest and no game-version whitelist."
+    },
+    {
+      "id": "R214-MIGRATION-RECEIPT",
+      "relative_evidence": "work/retail_colors_r214/diagnosis/R213_MIGRATION_RECEIPT_SNAPSHOT.json",
+      "sha256": "e139fa34bdd97238a12e27a763312b459e221ff66f676eb6094f9cd595a40f2b",
+      "observation": "Byte-exact snapshot of actual R213 retirement receipt: four exact owned files removed after backup outside Paks; no blanket cleanup."
+    },
+    {
+      "id": "R214-INTEGRATION",
+      "relative_evidence": "work/retail_colors_r214/FINAL_INTEGRATION_CONTRACT.json",
+      "sha256": "1d225cb6c253ae55a5a2a0e5f54ff291c2999856b9bc736f0f8567a2a171caa4",
+      "observation": "Final installed integration contract binds material, package, protected payload, gameplay and installation receipts; retail acceptance remains false."
+    }
+  ],
+  "pending": [
+    "full async CharaSelect and user retail color-switch acceptance",
+    "runtime gameplay equivalence and unproved external/native indirect consumers"
+  ]
+}

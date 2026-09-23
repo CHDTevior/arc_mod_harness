@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "evidence_root": "private-project-root",
+  "scope": "Relative evidence identifiers and SHA256 only; private reports/assets are not redistributed. Technical validation is not retail playback or user listening acceptance.",
+  "status": "AUDIO_SOURCE_MAPPING_ENCODE_CONTAINER_AND_DELIVERY_VERIFIED_RETAIL_LISTENING_PENDING",
+  "entries": [
+    {
+      "id": "AU-SOURCE",
+      "relative_evidence": "work/retail_visual_r213/audio/source_audit/SOURCE_AUDIT.json",
+      "sha256": "9bc27cac0194b6ce18f0d2c11acfc1b0d3b199bd2e4e4940b684aadedfb928b3",
+      "observation": "462 final WAV hashes and64 preserved original decoded sample identity; historical RMS method and limits."
+    },
+    {
+      "id": "AU-MAPPING",
+      "relative_evidence": "work/retail_visual_r213/audio/ORIGINAL_MAPPING_AUDIT.json",
+      "sha256": "991b90a8086c28e4330afdd4215cba87047c8142b0a4afd4cd00c940adfdeb1b",
+      "observation": "467 current original package OGG hashes and format/property/import layout matched explicit production map."
+    },
+    {
+      "id": "AU-ENCODE",
+      "relative_evidence": "work/retail_visual_r213/audio/ENCODE_AUDIT.json",
+      "sha256": "5d9ea3f4094de019f42c1f96d400fd07af8e0c815fbfc28dc29c91167c71b2e7",
+      "observation": "398 single-q10 outputs,full native Vorbis and ffmpeg decodes,frame/RMS/correlation/SNR audit; no new gain/pitch."
+    },
+    {
+      "id": "AU-PRESERVED",
+      "relative_evidence": "work/retail_visual_r213/audio/PRESERVED_ORIGINALS.json",
+      "sha256": "35a98e1bff32c71be61f3684675a79fc42525b6e28276279be126975e4d9f31c",
+      "observation": "64 unique original voices map to66 original packages; zero replacement files for these."
+    },
+    {
+      "id": "AU-CONTAINER",
+      "relative_evidence": "work/retail_visual_r213/audio/COOKED_TECHNICAL_DETAILS.json",
+      "sha256": "e7f584ae00950769eec7a7b9349102f76f23ba95bcf136a70e31b448dd7aaaf2",
+      "observation": "401 native SoundWave containers: metadata preserved,necessary bulk lengths changed,UModel extraction OGG hashes match."
+    },
+    {
+      "id": "AU-DELIVERY",
+      "relative_evidence": "work/retail_visual_r213/audio/MANIFEST.json",
+      "sha256": "2e93f442cd1b96fee3922a595941d2da38687a450bb2d8ee149eba842d588c0a",
+      "observation": "401 packages802 cooked files21655458bytes,no ubulk; technical release candidate,retail playback untested."
+    }
+  ]
+}

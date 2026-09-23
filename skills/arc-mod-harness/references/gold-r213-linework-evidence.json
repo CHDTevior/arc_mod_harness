@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "evidence_root": "Relative identifiers resolve from the private case project root; source files are not distributed.",
+  "scope": "Native local linework engineering and source data evidence only. Root reviewer accepted a test candidate; no user art decision or installed retail acceptance is recorded.",
+  "status": "FINAL_THREE_SOURCE_NATIVE_SINGLE_COOK_323_REQUESTED_VISUAL_REVIEW_AND_DELIVERY_PASS_WITH_LIMITS",
+  "final_receipts_pending": [
+    "installed retail acceptance",
+    "user art decision"
+  ],
+  "entries": [
+    {
+      "id": "LW-EYE-CAUSE",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/ROOT_CAUSE_AND_PROPOSAL_ZH.md",
+      "sha256": "f344aac77b498726686e408acb4d43a63af8459ad85356a80e491d64c581306f",
+      "observation": "Eye pixel-ray penetration cause; historical nose-width hypothesis was not a proven GPU cause."
+    },
+    {
+      "id": "LW-EYE-SURFACE",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/surface_conforming/SURFACE_CONFORMING_CREASE.json",
+      "sha256": "01069c55399cf1052a290a934344a5d7ed358d18a451f1af61149d54ebe9e7c8",
+      "observation": "Per-native-skin-triangle crease clipping, barycentric fields and residual contract; data-stage report."
+    },
+    {
+      "id": "LW-EYE-MOTION",
+      "relative_evidence": "work/retail_visual_r213/face/thin_final_fbx/SURFACE_MOTION_CHECKS.json",
+      "sha256": "7c2e455228976474a5c63f457a6fbd194cfe3ad34d70f14d512efa6a86054980",
+      "observation": "Earlier frozen THIN 2877-frame motion checks, inherited only through exact non-nose chain."
+    },
+    {
+      "id": "LW-NOSE-ALPHA",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/current_thin_nose/ALPHA0_FRAMEBUFFER_COMPARE.json",
+      "sha256": "5a2220ffbd22ab887abb25f7ea1fe16fac5ff928ad66eb9088187ead43984d31",
+      "observation": "Alpha-only trial did not improve dark line."
+    },
+    {
+      "id": "LW-NOSE-OUTLINE",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/current_thin_nose/NO_OUTLINE_FRAMEBUFFER_COMPARE.json",
+      "sha256": "385aa37112f6ce0a58c73470caba55f7994054b25fc669186d70c47e24355292",
+      "observation": "Surrounding outline isolation did not improve line."
+    },
+    {
+      "id": "LW-NOSE-RED",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/current_thin_nose/RED254_FRAMEBUFFER_COMPARE.json",
+      "sha256": "ac0bd79e65e6b3b849675d437fccc130501c00454eb41267eb93e36a6c03eb90",
+      "observation": "Red 255 to 254 did not improve line."
+    },
+    {
+      "id": "LW-NOSE-NORMAL",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/current_thin_nose/NORMAL_FULL_FRAME_COMPARE.json",
+      "sha256": "921202a2ee94a88bde47e8abe90a3e1bce3d397effa2519ac69c30e9f5c3c384",
+      "observation": "Normal trial rejected; actual packed normal readback separately verified."
+    },
+    {
+      "id": "LW-NOSE-RUNTIME",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/current_thin_nose/RUNTIME_INDEX_POSITION_NORMAL_GUARD.json",
+      "sha256": "6197e55763b99b6208bad795b7b58bdae6231a9db22541713ba5e4bea002dabb",
+      "observation": "Valid v2 CPU RenderData/index-range/normal backing; explicitly not GPU submission proof."
+    },
+    {
+      "id": "LW-NOSE-DEPTH",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/current_thin_nose/FRONT020_FRAMEBUFFER_COMPARE.json",
+      "sha256": "3418cbba328def04ca8f6b528274b8a3ad053276407f0c8f22b82c992bf0ef67",
+      "observation": "Small-depth trial remained visually inadequate."
+    },
+    {
+      "id": "LW-NOSE-WIDTH",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/lh_nose_width110_2k/CAPTURE_COVERAGE.json",
+      "sha256": "bdf6a03298c2b581e0f738507fbc187d223bd8ed1d7ccb490793a1537ffd6191",
+      "observation": "Wider original-flank trial native 2K coverage; not accepted production art."
+    },
+    {
+      "id": "LW-NOSE-GREEN",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/lh_nose_inkgreen_2k/CAPTURE_COVERAGE.json",
+      "sha256": "fb4685076079cc7cac50bc705e7465cd4adf05a7eeb6beb3f6a78fb0b4130b91",
+      "observation": "Isolated green-ink 2K diagnostic coverage; only some nose fragment response visible."
+    },
+    {
+      "id": "LW-NOSE-OLD-SURFACE",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/lh_nose_surface_2k/CAPTURE_COVERAGE.json",
+      "sha256": "74f1171656f816cc1da1d1da86a243ffdd615ffe522c28277692d1a90a4cc2ed",
+      "observation": "Full clipping on old footprint still failed local readability goal."
+    },
+    {
+      "id": "LW-BRIDGE-OUTLINE",
+      "relative_evidence": "work/retail_visual_r213/face/nose_bridge_outline/MANIFEST.json",
+      "sha256": "16b5574f483adbeadfb4df5e8220fae63bec077c285c42e3f4b37023ec69ecea",
+      "observation": "Frozen bridge-side mirrored projection design; provisional Y is not final attachment."
+    },
+    {
+      "id": "LW-BRIDGE-SURFACE",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/triangle_diagnostic/final_posed_depth/nose_bridge_surface/SURFACE_CONFORMING_NOSE.json",
+      "sha256": "35a793795dfb91810110ebf76668bee80a0e5855036ab03f77c1152836e24690",
+      "observation": "138 rows/62 triangles, complete skin attachment and 1323 morph contract."
+    },
+    {
+      "id": "LW-BRIDGE-METRICS",
+      "relative_evidence": "work/retail_visual_r213/face/nose_bridge_diagnostic/ART_METRICS.json",
+      "sha256": "c0e52b061411b7a1eff1dc3a51ba60387105424f6d94cb7b4ea3227cd08072bf",
+      "observation": "Projection dimensions distinguished from actual sloped surface dimensions."
+    },
+    {
+      "id": "LW-BRIDGE-GUARD",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/attachment_guard_revision/NOSE_BRIDGE_DIAGNOSTIC_INDEPENDENT_GUARD.json",
+      "sha256": "710729f1bb898f1b196a24481809327b22d830124697b722ba1b7cfae485bb81",
+      "observation": "Independent Young source guard; all 1323 morphs, non-nose tree and weights."
+    },
+    {
+      "id": "LW-BRIDGE-780",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/lh_nose_bridge_2k/frame_0780.png",
+      "sha256": "da8833c3a8fc602da0b65ec2c087f67bf62d20bc503d9c0a2251ceb161b6daaa",
+      "observation": "Native original-postprocess 2560x1440 local view; root accepted as test candidate, not user approval."
+    },
+    {
+      "id": "LW-BRIDGE-820",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/lh_nose_bridge_2k/frame_0820.png",
+      "sha256": "8bbe2e6fcaddee0a0ed8c98ec01b5a7221c58a7205a4d3aa5f9039db0290ec92",
+      "observation": "Native original-postprocess 2560x1440 dark tapered line; local success, not retail."
+    },
+    {
+      "id": "LW-BRIDGE-CAPTURE",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/captures/lh_nose_bridge_2k/CAPTURE_COVERAGE.json",
+      "sha256": "e9d49d3e76ee3c2f4f2b061b31b68b60a950de8fa0f481cac7187efb27f351f0",
+      "observation": "Two original 2K captures, CPU snapshots zero, diagnostic hides zero, retail false."
+    },
+    {
+      "id": "LW-THREE-SOURCE",
+      "relative_evidence": "work/retail_visual_r213/face/nose_bridge_final_fbx/EYELID_FBX_MANIFEST.json",
+      "sha256": "d4a85fe5b6de6694594671e663fb20a7db5d8537c6a760c03d59880460ed89af",
+      "observation": "Final three-head source frozen; native/Cook/final combined receipts separately pending."
+    },
+    {
+      "id": "LW-THREE-COMMON",
+      "relative_evidence": "work/retail_visual_r213/face/nose_bridge_final_fbx/COMMON_DETAIL_COVERAGE.json",
+      "sha256": "a490c888f9fcaccfb327be232a7a677bcaeafe186a55bcaee032df9f64a11b65",
+      "observation": "Common topology/positions/all1323 detail morph arrays on all three heads."
+    },
+    {
+      "id": "LW-THREE-GUARD",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/attachment_guard_revision/FINAL_SURFACE_ATTACHMENT_INDEPENDENT_GUARD.json",
+      "sha256": "99d44cf7543d4475ccc6306a0bd6d750d30e54b204f5e8323cfd2ce79b0a9620",
+      "observation": "Independent final source guard and exact non-nose THIN inheritance chain."
+    },
+    {
+      "id": "LW-OWNER-METHOD",
+      "relative_evidence": "work/retail_visual_r213/face/README.md",
+      "sha256": "e565ae37ae87043fa06d40446b621c7007318b580322ece7d069fd29e420e077",
+      "observation": "Current face method README updated after same-version final review; prior revision digest retained.",
+      "prior_revision_sha256": "89785f63ff9a173da2b8d70e1602dfb56d4b1a025440cfd24249e644a6bad6d8"
+    },
+    {
+      "id": "LW-SUPPORT-ILM",
+      "relative_evidence": "work/retail_visual_r213/face/eyelid_fbx/WEDGE_ILM_MANIFEST.json",
+      "sha256": "e73a3557811a4fbce7c055729d43e3435c372ebe63fb94ab1716766a87aeb107",
+      "observation": "Only1024 ILM pixels; existing unused family1 sample, original Base/SSS unchanged."
+    },
+    {
+      "id": "LW-NATIVE-HEADS",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_NATIVE_HEAD_GUARD.json",
+      "sha256": "2bb865c1c756e4839997f0b0e180a97941f8aef6a43aa5156efb1265507dc5ae",
+      "observation": "Final same-revision fresh original heads and3969 position-only morphs."
+    },
+    {
+      "id": "LW-NATIVE-GEOMETRY",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_NATIVE_GEOMETRY_GUARD.json",
+      "sha256": "e5ad6d7b00af23e965522f84fd848df20672722c3afce5801cebc38d8a015370",
+      "observation": "Actual native4UV, family routing and geometry counts."
+    },
+    {
+      "id": "LW-NATIVE-PALETTE",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_NATIVE_DETAIL_PALETTE_GUARD.json",
+      "sha256": "1711984b5053150687bef4df21be03a12e509cfae9a849a6c18eed2aaea0ba6e",
+      "observation": "Actual native nose and black ink UV/family guard."
+    },
+    {
+      "id": "LW-NATIVE-SOL",
+      "relative_evidence": "work/retail_visual_r213/sol_rigid/NATIVE_SOL_RIGIDITY_BRIDGE_SHADOW_NATIVE_FROZEN.json",
+      "sha256": "ea4af30fc5f7988f468a2ea1c0cbd4c6a843c366ba62ac4ea15e27e422d438a4",
+      "observation": "Same postshadow nativeLow/High rigid frame/lens guard; no SOL morphs."
+    },
+    {
+      "id": "LW-COMBINED-INPUTS",
+      "relative_evidence": "work/retail_visual_r213/face/native/native_scene_v2/FINAL_COMBINED_AUTHOR_INPUTS.json",
+      "sha256": "3411bb45994baafa4a72e072e8c6fed9c2da951e2cb640e9f0f1d4e39767e19c",
+      "observation": "Frozen final combined inputs for ongoing production cameras; not their result."
+    },
+    {
+      "id": "LW-FINAL-COOK",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_COOKED_SERIALIZATION_GUARD.json",
+      "sha256": "37509fe90e1c0365879a3b274379148c5af9cdba8ac449dcf7853da8444bb002",
+      "observation": "Final single Cook: 3969 position-only morphs and bounded BC7 ILM serialization."
+    },
+    {
+      "id": "LW-FINAL-COOK-UV",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_COOKED_UV_GUARD.json",
+      "sha256": "05439c596b2853bad5259ec7e0182f0f56e6c9c360604799e53dfb3daff38e0f",
+      "observation": "Actual cooked four-UV triangle-family routing; bounded half precision, not full-weight export proof."
+    },
+    {
+      "id": "LW-FINAL-COOK-SHADOW",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_COOKED_SHADOW_GUARD.json",
+      "sha256": "fad0594913533d78e7849aa518732e7a42881afe415a072449612a93094d0ed6",
+      "observation": "32 flags in final single Cook plus native before/after preserved buffers; not two-Cook comparison."
+    },
+    {
+      "id": "LW-FINAL-LH-SECOND",
+      "relative_evidence": "work/retail_visual_r213/face/final_visual_review/LH_SECOND_HALF_REVIEW.json",
+      "sha256": "25b1a2fb9cd305218afd951e8302d1b2ffe18a059be260e21e5371868d909fd4",
+      "observation": "18 sheets,156 frames,26 full originals; visible-region review with near-closed pale band and source/ROI/FX limits."
+    },
+    {
+      "id": "LW-FINAL-VISUAL",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/FINAL_NATIVE_VISUAL_ACCEPTANCE.json",
+      "sha256": "97da1929fbefb15e7f9dcf94be216681fc127c50de558aa02c2ae4fb3e8f3c60",
+      "observation": "323 requested native2K frames reviewed on same frozen author inputs; playtest candidate with limits, not retail/user approval."
+    },
+    {
+      "id": "LW-FINAL-DELIVERY",
+      "relative_evidence": "work/retail_visual_r213/eyelid_native/delivery/MANIFEST.json",
+      "sha256": "bd6742682b50ae689048c7df32cc0ff373348a719cb2141f56b348231b0de305",
+      "observation": "3 original-path heads and bounded ILM:8 cooked companions,90889200 bytes, same-source final receipts."
+    }
+  ]
+}

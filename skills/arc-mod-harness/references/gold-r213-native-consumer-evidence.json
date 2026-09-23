@@ -1,0 +1,123 @@
+{
+  "case": "Gold replacement for Slayer: R213 native selection and intermediate entry consumers",
+  "snapshot_date": "2026-09-22",
+  "scope": "Relative private-case identifiers and SHA-256 digests only. No game assets, private engine code, original report contents, machine paths or private transcripts are distributed. This index does not execute or independently reproduce the measurements.",
+  "stage_boundary": "The R193-R200 material in gold-retarget-example.md is historical. These R213 records separate current retail static inspection, native editor CPU evaluation, cooked-data checks and staged field audits. None records a user-approved R213 retail render.",
+  "invalidation": "A source or input change invalidates the associated earlier comparison or review; re-hash and repeat the affected check. A digest is identity evidence, not a human visual decision.",
+  "records": [
+    {
+      "id": "RA01",
+      "source_id": "work/retail_visual_r213/animation/route_audit/FINDINGS.md",
+      "sha256": "86a1c1bc340b617e4b72efa84d365833dabaa5bc44c0b527f7de52edc93e3c25",
+      "evidence_kind": "current-retail-static-audit",
+      "supports": "Actual ADV script, original AnimArray/AS consumers, missing intermediate clips, and native ADV graph inventory."
+    },
+    {
+      "id": "RA02",
+      "source_id": "work/retail_visual_r213/animation/route_audit/CURRENT_M903_M905_CLOCKS.json",
+      "sha256": "588c724a54f4fbe20eb7155f9b29f5c4550e339dbf60b396146ee3dade5fb56d",
+      "evidence_kind": "current-retail-static-audit",
+      "supports": "Current cooked frame counts, exact float32 durations, Step and per-track hold/key schedules."
+    },
+    {
+      "id": "RA03",
+      "source_id": "work/retail_visual_r213/animation/select_fix.c.in",
+      "sha256": "2ff3b0b953fc5fb2382d44d93ec565b0faffbc7334b6d40c1c684657823bdd78",
+      "evidence_kind": "private-authoring-implementation",
+      "supports": "Original headlow EventGraph socket capability check, native REDPawn body fallback, executed getter, and tick prerequisite; not a portable harness command."
+    },
+    {
+      "id": "RA04",
+      "source_id": "work/retail_visual_r213/animation/GRAPH_PRESERVATION_GUARD.json",
+      "sha256": "65ddfff4738c5b689fe84b4c1390f9fbdbf11e56a7902300e2b8d86a1c86feea",
+      "evidence_kind": "author-graph-readback",
+      "supports": "All original ADV graph properties and complete headlow AnimGraph properties/pins preserved; compiler link indices normalized explicitly."
+    },
+    {
+      "id": "RA05",
+      "source_id": "work/retail_visual_r213/animation/NATIVE_SELECT_BASELINE_FAILURE.jsonl",
+      "sha256": "78fc1a241991bc91df353828823d47764eadbd6d01c2946465d1ab0e28abaa82",
+      "evidence_kind": "native-editor-cpu-baseline",
+      "supports": "Actual native character-select setup reproduces the R212 root-parent head displacement; no retail visual claim."
+    },
+    {
+      "id": "RA06",
+      "source_id": "work/retail_visual_r213/animation/NATIVE_POSE_GUARD.json",
+      "sha256": "aa91da37a199acebb373ccc54717187f2f118843bee666149212f9206fb5d88e",
+      "evidence_kind": "native-editor-cpu-candidate",
+      "supports": "28 selection and 56 ADV component-pose samples; source validity, anchor/cache agreement and finite transforms."
+    },
+    {
+      "id": "RA07",
+      "source_id": "work/retail_visual_r213/animation/native_pose.c.in",
+      "sha256": "c0963ce92da3da0168efb64296bc480434f7b7f3d1ad3bb17847a18607132c29",
+      "evidence_kind": "private-native-editor-fixture",
+      "supports": "Actual native selection SetupMesh using original-path arrays; linked control and unlinked context."
+    },
+    {
+      "id": "RA08",
+      "source_id": "work/retail_visual_r213/animation/native_adv_pose.c.in",
+      "sha256": "92192cb4669398ee65083f4e7ca0ba073eabec0e0ecc925988b73d4a9b371c2a",
+      "evidence_kind": "private-native-editor-fixture",
+      "supports": "Actual native ADV methods, clock application and direct sequence getters; native build-specific adapter."
+    },
+    {
+      "id": "RA09",
+      "source_id": "work/retail_visual_r213/animation/native_adv_control/BODY_POSE_COMPARISON.json",
+      "sha256": "e28f7fc3ac636f2fa569aa36645f6c8f99f1626cc2dcdc50b91124dbf1793c39",
+      "evidence_kind": "native-editor-cpu-control",
+      "supports": "Original and extended ADV graphs preserve 465 old bones across 56 sampled poses within reported float32 roundoff."
+    },
+    {
+      "id": "RA10",
+      "source_id": "work/retail_visual_r213/animation/entry_body/DIRECT_SEQUENCE_NATIVE_POSE_GUARD.json",
+      "sha256": "7e8b55fb0b3a21b906873e6a6f66ba4ee7481315a57ee829c1fe1eaabc649677",
+      "evidence_kind": "native-editor-cpu-getter-comparison",
+      "supports": "21 poses and 9765 named-bone checks against actual sequence getter; two tiny m904 helper holds occur before graph evaluation."
+    },
+    {
+      "id": "RA11",
+      "source_id": "work/retail_visual_r213/animation/entry_body/COOKED_ANIMATION_VALIDATION.json",
+      "sha256": "747367b26f93ddcc1a9fd9bd4a4c5b7e695b6b8280b1e4ab666bfcc1af4acf53",
+      "evidence_kind": "final-cooked-data-validation",
+      "supports": "All-frame final body target and actual native compressed hold contract for three added original-path clips."
+    },
+    {
+      "id": "RA12",
+      "source_id": "work/retail_visual_r213/animation/entry_body/COOKED_COAT_VALIDATION.json",
+      "sha256": "ea96b25dc40157f18448b19e676a9887962705cc5a587639c934fa93e7c82d8f",
+      "evidence_kind": "final-cooked-data-validation",
+      "supports": "All-frame coat root fit plus original nonroot channels/root-Q values and cooked frame-table preservation."
+    },
+    {
+      "id": "RA13",
+      "source_id": "work/retail_visual_r213/animation/PROTECTED_ANIMATION_GUARD.json",
+      "sha256": "060785df05670f18c652814988dff5955edbf8cfa19480aa34bd485479bc537b",
+      "evidence_kind": "author-byte-preservation",
+      "supports": "208 existing animation author assets remain identical; not 208 retail visual approvals."
+    },
+    {
+      "id": "RA14",
+      "source_id": "work/retail_visual_r213/KAWAII_FIELD_GUARD.json",
+      "sha256": "92e9c48272e7094f761e0a284e14cf3b2f233cc2c179acdef1f3d5d09033d443",
+      "evidence_kind": "staged-cooked-field-audit",
+      "supports": "Final R213 staging snapshot:1034 packages scanned,six Kawaii ABs,fourteen nodes,64 functions,2554 owner/member references,zero unresolved. Earlier622-package snapshot digest retained; same field coverage,not retail acceptance.",
+      "previous_snapshot_sha256": "97b22fb2645f9010a5a12b9eec73038f91481ddc5b3df04a8a45034a75bc610f",
+      "previous_snapshot_packages": 622
+    },
+    {
+      "id": "RA15",
+      "source_id": "work/retail_fatal_r212/reference_audit/PROVEN_MEMBER_FAILURE.md",
+      "sha256": "6afcbeb7106c7077fe39902d4022ca4adb2ea751678c755f73f5349bb57e77b5",
+      "evidence_kind": "retail-fatal-static-root-cause",
+      "supports": "R212 demonstrated Shipping-missing editor-only CollisionLimitBase.Guid field references; author graph repair required."
+    },
+    {
+      "id": "RA16",
+      "source_id": "work/retail_visual_r213/animation/ANIMATION_DELIVERY.json",
+      "sha256": "4b5039622d5c9837310bf43131a1644fc7faac8b8a2e493f01d0d9b11f261a1d",
+      "evidence_kind": "minimal-delivery-manifest",
+      "supports": "Eight original-path assets and sixteen cooked companions with digests; no extra dependency overrides or retail acceptance claim."
+    }
+  ]
+}

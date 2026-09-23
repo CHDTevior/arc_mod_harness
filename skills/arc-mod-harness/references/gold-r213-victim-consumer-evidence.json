@@ -1,0 +1,72 @@
+{
+  "case": "Gold replacement for Slayer: R213 Last Horizon VS_SLY victim coverage",
+  "snapshot_date": "2026-09-22",
+  "scope": "Relative private-case identifiers and SHA-256 digests only. No game assets, private reports, engine code, machine paths or private transcripts are redistributed. This index is not an executable port or an independent reproduction.",
+  "stage_boundary": "Original Slayer control, Gold baseline and Gold candidate are development UE actual-native-consumer previews. CPU seam validation covers the questioned held pose, not material/normal/shadow appearance, every pose or retail-user acceptance. All candidates remain pending retail-user acceptance.",
+  "invalidation": "Changed animation, mesh, topology, binding, native layout, camera or timing input invalidates affected evidence. A digest is not a human review decision. Attacker-side success does not establish victim coverage.",
+  "records": [
+    {
+      "id": "RV01",
+      "source_id": "work/retail_visual_r213/victim_head/ROUTE_AUDIT.json",
+      "sha256": "31eabeed72ca5b18266333b9fb1587e133c4d8311d9baad393d6ef52bb3ad9d0",
+      "evidence_kind": "current-retail-static-consumer-audit",
+      "supports": "Separate attacker and VS_SLY victim routes; unchanged original Slayer body/coat was used on the Gold victim."
+    },
+    {
+      "id": "RV02",
+      "source_id": "work/retail_visual_r213/victim_head/DELIVERY.json",
+      "sha256": "213025040105ebb863a1895239e680790ca4ee8dd458e857bd8284854b40cae1",
+      "evidence_kind": "frozen-delivery-and-protection-manifest",
+      "supports": "Exactly two original-path sequences and four Cook companions; independent holds, protected resources and camera image digests."
+    },
+    {
+      "id": "RV03",
+      "source_id": "work/retail_visual_r213/victim_head/HEAD_ATTACHMENT_NUMERICAL.json",
+      "sha256": "39ceb05e17d502cf8fa0d2322413613d1f4b9613d2b9fc8964e0976180d294a2",
+      "evidence_kind": "development-UE-native-attachment-comparison",
+      "supports": "Already agreeing component/attachment transforms, old anatomical displacement and candidate target residual; anchor evidence is not skin-seam evidence."
+    },
+    {
+      "id": "RV04",
+      "source_id": "work/retail_visual_r213/victim_head/NATIVE_FULL_BODY_GUARD.json",
+      "sha256": "ff2485c329a7512dcb55e1b8795d6bbc5dc5a201921b2b0889ced27b9f000dd5",
+      "evidence_kind": "development-UE-native-post-graph-pose-comparison",
+      "supports": "465 named bones at frames 599/600/601 against the retarget target; these samples share one held pose and do not replace full source-key coverage."
+    },
+    {
+      "id": "RV05",
+      "source_id": "work/retail_visual_r213/victim_head/NECK_SEAM_GUARD.json",
+      "sha256": "c094812f9439d3c6060ff46fe2ada966b92e279ff8d1631de29d4cd0e84fee3a",
+      "evidence_kind": "development-UE-native-CPU-skin-and-topology-comparison",
+      "supports": "Actual GPU-scene CPU skin positions plus matching frozen topology: all 57 body neck vertices and 57 edges match the head boundary at frame 600, using unrounded distances."
+    },
+    {
+      "id": "RV06",
+      "source_id": "work/retail_visual_r213/victim_head/RESULTS.md",
+      "sha256": "f471646d5d10db916b218bc4414f8f77d8df406207c912b2ef631a91bf7ac0b7",
+      "evidence_kind": "frozen-case-conclusion-with-stage-limits",
+      "supports": "Root cause, minimal repair, actual-native evidence and limits; no retail-user visual acceptance or material/normal continuity claim."
+    },
+    {
+      "id": "RV07",
+      "source_id": "work/retail_visual_r213/victim_head/body/COOKED_ANIMATION_VALIDATION.json",
+      "sha256": "f4ce67833be1c7df81ffa9a646db81be854966a7da38cf4d0278a81d8d418cbb",
+      "evidence_kind": "cooked-body-pose-and-timing-validation",
+      "supports": "Body full keys, frame count, Step timing and independent holds after Cook."
+    },
+    {
+      "id": "RV08",
+      "source_id": "work/retail_visual_r213/victim_head/coat/COOKED_COAT_VALIDATION.json",
+      "sha256": "7f0ccc1e174ef0c5dd485f3b88c8e3e10bb4d265b34f4d57f949d81d1e2b98df",
+      "evidence_kind": "cooked-coat-pose-and-protection-validation",
+      "supports": "Coat root P/S fit and independent holds; protected nonroot channels and the evaluated-unit-scale codec exception."
+    },
+    {
+      "id": "RV09",
+      "source_id": "work/retail_visual_r213/victim_head/CURRENT_SOURCE_EXTRACTION.json",
+      "sha256": "7ac2af92d07d32f2517ed38fa38c7afcbb27f6fd850e0c0e8d8558fd3598f9ce",
+      "evidence_kind": "current-retail-source-extraction-audit",
+      "supports": "Current source identity used for the victim repair rather than an assumed attacker-side or older sequence."
+    }
+  ]
+}

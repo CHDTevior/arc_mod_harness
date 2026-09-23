@@ -1,0 +1,93 @@
+{
+  "case": "Gold replacement for Slayer: R213 one Last Horizon hand flame anchor",
+  "snapshot_date": "2026-09-22",
+  "scope": "Relative private-case identifiers and SHA-256 digests only. No game assets, private reports, engine code, machine paths or private transcripts are redistributed. This evidence index is not an executable port or an independent reproduction.",
+  "stage_boundary": "Source and Gold camera captures and particle measurements are development UE actual-native-consumer previews. None is retail-user visual acceptance. Other effects remain outside the authorized change.",
+  "invalidation": "Changes to source pose, binding, BBS clocks, particle resource, native layout or camera input invalidate the affected prior comparison. A digest identifies an input or report and is not a human review decision.",
+  "records": [
+    {
+      "id": "RF01",
+      "source_id": "work/retail_visual_r213/fx_anchor/route_audit/CURRENT_LH_BBS.json",
+      "sha256": "56ea488024a434e246e8406badfae99ddec30e809906c18b3a217520d3f45b50",
+      "evidence_kind": "current-retail-static-audit",
+      "supports": "Actual Last Horizon action, particle routes, attachment flags, independent charge stage and authoritative BBS timings."
+    },
+    {
+      "id": "RF02",
+      "source_id": "work/retail_visual_r213/fx_anchor/runs/baseline_payload/fx_trace.jsonl",
+      "sha256": "bdb3d0121b9d619b61b37e4bac76736838f1afa7cc72e66cd5fdf5158287e293",
+      "evidence_kind": "development-UE-native-consumer-observation",
+      "supports": "Original native body/PSC/emitter timing, attachment and complete observed CPU particle payload before correction."
+    },
+    {
+      "id": "RF03",
+      "source_id": "work/retail_visual_r213/fx_anchor/PIVOT_GEOMETRY.json",
+      "sha256": "888b0b41143662ea965004a39faf97071f67828d37b315127e5728931ae6fe80",
+      "evidence_kind": "bind-and-native-pose-geometry",
+      "supports": "Bind-derived Gold anatomical hand point, actual native component-space delta, source identity and numeric matrix closure."
+    },
+    {
+      "id": "RF04",
+      "source_id": "work/retail_visual_r213/fx_anchor/route_audit/SOCKET_AND_TABLE_ROUTES.json",
+      "sha256": "e51cd20faa138c71d409c26edb7549de4f2b68faf59128c2ced4cb3378c831c2",
+      "evidence_kind": "current-retail-static-audit",
+      "supports": "Native handR socket and original particle/animation table routing."
+    },
+    {
+      "id": "RF05",
+      "source_id": "work/retail_visual_r213/fx_anchor/CAMERA_EVIDENCE.json",
+      "sha256": "87cc11208d6d72f3d7fe45f764c8195517f5f473b9f3a8f19a0e0f398bafa84c",
+      "evidence_kind": "development-UE-native-camera-preview-index",
+      "supports": "Hashes of pristine source, Gold before and Gold candidate captures with evaluation-stage and visual-acceptance limits."
+    },
+    {
+      "id": "RF06",
+      "source_id": "work/retail_visual_r213/fx_anchor/route_audit/AUTHOR_PROPERTY_GUARD.json",
+      "sha256": "f94834f7ab5c552b0fe7d63be34987706befac962fd95cf088aff4b53d40cdcb",
+      "evidence_kind": "author-resource-difference-audit",
+      "supports": "Exact original object protection, scoped 17 differences, nonbaked curves and four native Orbit options."
+    },
+    {
+      "id": "RF07",
+      "source_id": "work/retail_visual_r213/fx_anchor/PROTECTED_RESOURCES.json",
+      "sha256": "16c7e4b3aa5cefbc23f56497329df0c21550fdae5930a0b9cf00ada05b32da4a",
+      "evidence_kind": "protected-resource-hash-audit",
+      "supports": "Frozen eight animation assets and sixteen cooked companions, separate charge and original ParticleData protection."
+    },
+    {
+      "id": "RF08",
+      "source_id": "work/retail_visual_r213/fx_anchor/route_audit/OFFSET_CLOCK_REVIEW.json",
+      "sha256": "3132d41d9ad70cca50a1b005064593c08e3db49229fe34f2915954655676f8b7",
+      "evidence_kind": "source-model-and-failure-analysis",
+      "supports": "Emitter-time wrap, distribution bake and birth-tick failures, four-Orbit algebra, normal clock equivalence and explicit abnormal-initialization counterexamples."
+    },
+    {
+      "id": "RF09",
+      "source_id": "work/retail_visual_r213/fx_anchor/route_audit/PDB_LAYOUT.json",
+      "sha256": "3b0d4d04ac741095230b45a144828f1920c766fb77ed0e377d5cf6abfa6d4097",
+      "evidence_kind": "private-exact-build-layout-audit",
+      "supports": "Engine DLL/PDB GUID-age match and actual field layouts for the private read-only observer, not a retail ABI guarantee."
+    },
+    {
+      "id": "RF10",
+      "source_id": "work/retail_visual_r213/fx_anchor/NATIVE_PARTICLE_GUARD.json",
+      "sha256": "8c8216bf1d3979c1ee1ab728d0fa71f28edfb034086d345faae3e8a8c8f50158",
+      "evidence_kind": "development-UE-native-consumer-comparison",
+      "supports": "2252 emitter rows,1494 particle payload samples,20 birth samples, final/history offset accuracy and pose protection with bounded auxiliary physics variation."
+    },
+    {
+      "id": "RF11",
+      "source_id": "work/retail_visual_r213/fx_anchor/route_audit/COOKED_PROPERTY_GUARD.json",
+      "sha256": "06266bd1bcdf86c8df6ac2906d41be28ce925cad750f41c8a0449aaaacd1d120",
+      "evidence_kind": "cooked-resource-difference-audit",
+      "supports": "185 original exports retained, protected emitter graphs, complete nonbaked curves,651 runtime field comparisons and zero new external package dependencies."
+    },
+    {
+      "id": "RF12",
+      "source_id": "work/retail_visual_r213/fx_anchor/PARTICLE_DELIVERY.json",
+      "sha256": "6526d918420d2b5380e734141ce20ae102fdb4f5d207c8436607c6ae6542113c",
+      "evidence_kind": "minimal-cooked-delivery-manifest",
+      "supports": "One original-path particle package, two cooked companions, explicit protection scope and remaining clock/retail-acceptance limits."
+    }
+  ]
+}
